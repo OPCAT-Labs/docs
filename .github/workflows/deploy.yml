@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Build website
-        run: npm build
+        run: yarn build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
