@@ -183,10 +183,10 @@ export type ScriptContext = {
 
 You can directly access the context through `this.ctx` in any public `@method`. It can be considered additional information a public method gets when called, besides its function parameters.
 
-The example below accesses the [spentScript](https://learnmeabitcoin.com/technical/locktime) of the spending transaction. 
+The example below accesses the spentScript of the spending transaction. 
 
 ```ts
-import { assert, ByteString, sha256, method, SmartContract, TxUtils } from '@opcat-labs/scrypt-ts-opcat';
+import { assert, ByteString, sha256, method, SmartContract, TxUtils, UInt64 } from '@opcat-labs/scrypt-ts-opcat';
 
 export class Clone extends SmartContract {
   constructor() {
@@ -197,8 +197,8 @@ export class Clone extends SmartContract {
   public unlock() {
     // make sure balance in the contract does not change
 
-    const script = this.ctx.spentScripts[Number(this.ctx.inputIndexVal)]
-    const amount: ByteString = this.ctx.spentAmounts[Number(this.ctx.inputIndexVal)]
+    const script = this.ctx.spentScriptHash
+    const amount: UInt64 = this.ctx.value
 
 
     // output containing the latest state
@@ -217,6 +217,7 @@ The following example ensures both Alice and Bob get 1000 satoshis from the cont
 
 ```ts
 
+
 import { method, prop, SmartContract, assert, Addr, ByteString, TxUtils, sha256 } from '@opcat-labs/scrypt-ts-opcat';
 
 export class DesignatedReceivers extends SmartContract {
@@ -234,15 +235,15 @@ export class DesignatedReceivers extends SmartContract {
 
     @method()
     public payout() {
-        const aliceOutput: ByteString = TxUtils.buildP2PKHOutput(this.alice, TxUtils.toSatoshis(1000n))
-        const bobOutput: ByteString = TxUtils.buildP2PKHOutput(this.bob, TxUtils.toSatoshis(1000n))
+        const aliceOutput: ByteString = TxUtils.buildP2PKHOutput(1000n, this.alice)
+        const bobOutput: ByteString = TxUtils.buildP2PKHOutput(1000n, this.bob)
         let outputs = aliceOutput + bobOutput
 
         // require a change output
         outputs += this.buildChangeOutput();
 
         // ensure outputs are actually from the spending transaction as expected
-        assert(this.ctx.shaOutputs == sha256(outputs), 'shaOutputs mismatch')
+        assert(this.checkOutputs(outputs), 'Outputs mismatch with the transaction context')
     }
 }
 ```

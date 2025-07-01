@@ -66,7 +66,7 @@ Now let’s look at what is in the smart contract.
 1. Run following command to compile the `Helloworld` contract:
 
 ```sh
-npx @opcat-labs/cli-opcat compile
+npm run compile
 ```
 
 This command will generate a contract artifact file at `/artifacts/helloworld.json`.
@@ -110,30 +110,48 @@ Next, start deploying and calling the contract:
 For this example, overwrite `deploy.ts` in the root of the project with the following code to deploy and call the `Helloworld` contract:
 
 ```ts
+import * as dotenv from 'dotenv'
+import { getDefaultProvider, getDefaultSigner } from './tests/utils/txHelper'
+import {
+    deploy,
+    sha256,
+    toByteString,
+    call,
+} from '@opcat-labs/scrypt-ts-opcat'
 import { Helloworld } from 'helloworld'
-import { getDefaultProvider, getDefaultSigner } from './tests/utils/txHelper';
-import { call, Covenant, deploy, sha256, toByteString } from '@opcat-labs/scrypt-ts-opcat';
 
-(async () => {
+// Load the .env file
+dotenv.config()
 
-    const covenant = Covenant.createCovenant(new Helloworld(sha256(toByteString("hello world", true))))
+if (!process.env.PRIVATE_KEY) {
+    throw new Error(
+        'No "PRIVATE_KEY" found in .env, Please run "npm run genprivkey" to generate a private key'
+    )
+}
 
-    const provider = getDefaultProvider();
-    const signer = getDefaultSigner();
+async function main() {
+    const contract = new Helloworld(sha256(toByteString('hello world', true)))
 
+    const provider = getDefaultProvider()
+    const signer = getDefaultSigner()
 
-    const deployTx = await deploy(signer, provider, covenant);
+    const deployPsbt = await deploy(signer, provider, contract)
 
-    console.log(`Helloworld contract deployed: ${deployTx.getId()}`)
+    const deployTx = deployPsbt.extractTransaction()
 
-    const callTx = await call(signer, provider, covenant, {
-        invokeMethod: (contract: Helloworld) => {
-            contract.unlock(toByteString('hello world', true));
-        
-    });
+    console.log(`Helloworld contract deployed: ${deployTx.id}`)
 
-    console.log('Helloworld contract `unlock` called: ', callTx.getId())
-})()
+    const callPsbt = await call(signer, provider, contract, (contract: Helloworld) => {
+        contract.unlock(toByteString('hello world', true))
+    })
+
+    const callTx = callPsbt.extractTransaction()
+
+    console.log(`Helloworld contract called: ${callTx.id}`)
+}
+
+main()
+
 ```
 
 Run the following command to deploy AND call our example contract.
@@ -144,16 +162,15 @@ npx tsx deploy.ts
 
 You will see some output like:
 
-<!-- ![](../../static/img/hello-world-deploy-and-call-output-btc.png) -->
+```
+Helloworld contract deployed: 2a303e2510dec383b3fd68e7ab6b3466fcfb1b5ae7e4844c5b0427ec63c3d715
+Helloworld contract called: a6691a8ce8228c7965aca6e59d72368341d42e091a670ab4bd4f8892d14eed46
+```
+
+You can view [the deployment transaction](https://testnet.opcatlabs.io/tx/2a303e2510dec383b3fd68e7ab6b3466fcfb1b5ae7e4844c5b0427ec63c3d715) using the blockchain explorer:
 
 
-You can view [the deployment transaction](https://mempool-testnet.fractalbitcoin.io/tx/8eb8cfcd18e006f92addae5dd7105317a7eac8affcebd678a88732f2c7e4d080) using the WhatsOnChain blockchain explorer:
+You can also view [the calling transaction](https://testnet.opcatlabs.io/tx/a6691a8ce8228c7965aca6e59d72368341d42e091a670ab4bd4f8892d14eed46):
 
-<!-- ![](../../static/img/hello-world-contract-deploy-tx-btc.png) -->
-
-
-You can also view [the calling transaction](https://mempool-testnet.fractalbitcoin.io/tx/dc000689cc7ab55046c0771e078932988eca71a83d2d2bca813461376c09a3c9):
-
-<!-- ![](../../static/img/hello-world-contract-call-tx-btc.png) -->
 
 Congrats! You have deployed and called your first Bitcoin smart contract.
