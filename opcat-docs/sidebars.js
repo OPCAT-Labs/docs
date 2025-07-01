@@ -35,8 +35,14 @@ const sidebars = {
       }
       ],
     },
+    {
+      type: 'category',
+      label: 'Tutorials',
+      items: [
+        'tutorials/hello-world',
+      ],
+    },
   ],
-  };
-  
-  module.exports = sidebars;
-  
+};
+
+module.exports = sidebars;

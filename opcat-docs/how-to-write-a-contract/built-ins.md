@@ -290,11 +290,11 @@ To learn more about time locks, see the [dedicated doc section](../advanced/time
 The `TxUtils` library provides a set of commonly used utility functions.
 
 
-- `static buildOutput(outputScript: ByteString, outputSatoshis: ByteString): ByteString` Build a transaction output with the specified script and satoshi amount.
+- `static buildOutput(scriptHash: ByteString, outputSatoshis: UInt64): ByteString` Build a transaction output with the specified script hash, satoshi amount and empty data.
 
 ```ts
-const lockingScript = toByteString('01020304')
-TxUtils.buildOutput(lockingScript, toByteString('0100000000000000')) // '01000000000000000401020304'
+const scriptHash = toByteString('f746ec16e2e791f6dc6507ced214429db32f2db3afe4648a55a49d8bbdc6e03d')
+TxUtils.buildOutput(scriptHash, 1n) // '0100000000000000f746ec16e2e791f6dc6507ced214429db32f2db3afe4648a55a49d8bbdc6e03de3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
 ```
 
 - `static buildP2PKHScript(pubKeyHash: PubKeyHash ): ByteString` Build a [Pay to Public Key Hash (P2PKH)](https://en.bitcoin.it/wiki/Transaction#Pay-to-PubkeyHash) script from a public key hash / address.
@@ -304,47 +304,31 @@ const address = Addr(toByteString('0011223344556677889900112233445566778899'))
 TxUtils.buildP2PKHScript(address) // '76a914001122334455667788990011223344556677889988ac'
 ```
 
-- `static buildP2PKHOutput(pubKeyHash: PubKeyHash, amount: ByteString): ByteString` Build a P2PKH output from the public key hash.
+- `static buildP2PKHOutput(amount: UInt64, pubKeyHash: PubKeyHash): ByteString` Build a P2PKH output from the public key hash.
 
 ```ts
 const address = Addr(toByteString('0011223344556677889900112233445566778899'))
-TxUtils.buildP2PKHOutput(address, toByteString('0100000000000000')) // '01000000000000001976a914001122334455667788990011223344556677889988ac'
+TxUtils.buildP2PKHOutput(1n, address) // '01000000000000005df43715170dedc3e6ed31224f6a29c16014e1329b37c9f225b0f917c3f6323fe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
 ```
 
 
-- `static buildP2WPKHScript(pubKeyHash: PubKeyHash ): ByteString` Build a [Pay to witness public-key hash (P2WPKH)](https://en.bitcoin.it/wiki/Bech32) script from a public key hash / address.
+- `static buildDataOutput(scriptHash: ByteString, satoshis: UInt64, dataHash: ByteString ): ByteString` Build a transaction output with the specified script hash, satoshi amount and data hash.
 
 ```ts
-const address = Addr(toByteString('0011223344556677889900112233445566778899'))
-TxUtils.buildP2WPKHScript(address) // '00140011223344556677889900112233445566778899'
+const scriptHash = toByteString('f746ec16e2e791f6dc6507ced214429db32f2db3afe4648a55a49d8bbdc6e03d')
+const dataHash = toByteString('48615e1ab34c2c9abeacf9cf6b4fea9093020829f974b8280c8f3fd826cbb9cf')
+TxUtils.buildDataOutput(scriptHash, 1n, dataHash) // '0100000000000000f746ec16e2e791f6dc6507ced214429db32f2db3afe4648a55a49d8bbdc6e03d48615e1ab34c2c9abeacf9cf6b4fea9093020829f974b8280c8f3fd826cbb9cf'
 ```
 
-- `static buildP2WPKHOutput(pubKeyHash: PubKeyHash, amount: ByteString): ByteString` Build a P2PKH output from the public key hash.
+- `static satoshisToByteString(n: UInt64): ByteString` Convert a satoshis amount to ByteString
 
 ```ts
-const address = Addr(toByteString('0011223344556677889900112233445566778899'))
-TxUtils.buildP2WPKHOutput(address, toByteString('0100000000000000')) // '01000000000000003000140011223344556677889900112233445566778899'
-```
-
-
-- `static buildP2TRScript(pubKey: XOnlyPubKey): ByteString` Build a [Pay to witness public-key hash (P2WPKH)](https://en.bitcoin.it/wiki/Bech32) script from a public key hash / address.
-
-```ts
-const pubKey = XOnlyPubKey(toByteString('cb83ce14e6fcca547b00aaa64b99a533c3354bb24d49ceefca7b0cf856d13b64'))
-TxUtils.buildP2TRScript(pubKey) // '5120cb83ce14e6fcca547b00aaa64b99a533c3354bb24d49ceefca7b0cf856d13b64'
-```
-
-- `static buildP2TROutput(pubKey: XOnlyPubKey, amount: ByteString): ByteString` Build a P2PKH output from the public key hash.
-
-```ts
-const pubKey = XOnlyPubKey(toByteString('cb83ce14e6fcca547b00aaa64b99a533c3354bb24d49ceefca7b0cf856d13b64'))
-TxUtils.buildP2TROutput(pubKey, toByteString('0100000000000000')) // '0100000000000000445120cb83ce14e6fcca547b00aaa64b99a533c3354bb24d49ceefca7b0cf856d13b64'
+TxUtils.satoshisToByteString(100000000n) // '00e1f50500000000'
 ```
 
 
-- `static buildOpreturnOutput(data: ByteString): ByteString` Build a data-carrying [OP_RETURN](https://en.bitcoin.it/wiki/OP_RETURN) script from `data` payload.
+- `static byteStringToSatoshis(bs: ByteString): UInt64` Convert a ByteString to satoshis amount
 
 ```ts
-const data = toByteString('hello world', true)
-TxUtils.buildOpreturnOutput(data) // '6a0b68656c6c6f20776f726c64'
+TxUtils.byteStringToSatoshis(toByteString('00e1f50500000000')) // 100000000n
 ```

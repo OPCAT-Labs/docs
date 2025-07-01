@@ -41,17 +41,17 @@ sCrypt already has a few built-in providers:
 You can initialize these providers like this:
 
 ```ts
-let dummyProvider = new DummyProvider();
+let dummyProvider = new DummyProvider('opcat-testnet);
 
 // testnet
-let provider = new MempoolProvider('fractal-testnet');
+let provider = new MempoolProvider('opcat-testnet');
 
 // mainnet
-let provider = new MempoolProvider('fractal-mainnet');
+let provider = new MempoolProvider('opcat-mainnet');
 
 
 // rpc
-let provider = new RPCProvider('http://127.0.0.1:8883', 'myWallet', 'username', 'password');
+let provider = new RPCProvider('opcat-testnet', 'http://127.0.0.1:8883', 'myWallet', 'username', 'password');
 ```
 
 ### Signer
@@ -87,9 +87,12 @@ This section could be summarized as the diagram below:
 A signer and a provider must be created before deployment and call. When we are ready to deploy the contract to the testnet/mainnet, we need a real provider like [DefaultProvider](#provider).
 
 ```ts
-const network = toBitcoinNetwork('opcat-testnet');
-const privder = new MempoolProvider(network);
-const signer = new DefaultSigner()
+import {MempoolProvider, DefaultSigner, fromSupportedNetwork } from "@opcat-labs/scrypt-ts-opcat";
+import { PrivateKey } from "@opcat-labs/opcat";
+
+
+const provider = new MempoolProvider('opcat-testnet');
+const signer = new DefaultSigner(PrivateKey.fromRandom(fromSupportedNetwork('opcat-testnet')))
 ```
 
 The `privateKey` must have enough coins. Learn how to fund it on a testnet using a [faucet](./faucet).
@@ -111,8 +114,8 @@ let instance = new MyContract(...initArgs);
 const initBalance = 1234;
 
 // build and send tx for deployment
-const deployTx = await deploy(signer, provider, instance, initBalance);
-console.log(`Smart contract successfully deployed with txid ${deployTx.id}`);
+const deployPsbt = await deploy(signer, provider, instance, initBalance);
+console.log(`Smart contract successfully deployed with txid ${deployPsbt.extractTransaction().id}`);
 ```
 
 ## Contract Call
@@ -156,23 +159,25 @@ What actually happens during the call is the following:
 A contract public `@method` often needs a signature argument for authentication. Take this [Pay To PubKey Hash (P2PKH)](https://learnmeabitcoin.com/technical/p2pkh) contract for example:
 
 ```ts
+import { assert, SmartContract, method, pubKey2Addr, Addr, prop, Sig, PubKey } from "@opcat-labs/scrypt-ts-opcat";
+
 export class P2PKH extends SmartContract {
-    @prop()
-    readonly address: Addr
+  @prop()
+  readonly address: Addr
 
-    constructor(address: Addr) {
-        super(..arguments)
-        this.address = address
-    }
+  constructor(address: Addr) {
+      super(...arguments)
+      this.address = address
+  }
 
-    @method()
-    public unlock(sig: Sig, pubkey: PubKey) {
-        // make sure the `pubkey` is the one locked with its address in the constructor
-        assert(pubKey2Addr(pubkey) == this.address, 'address check failed')
+  @method()
+  public unlock(sig: Sig, pubkey: PubKey) {
+      // make sure the `pubkey` is the one locked with its address in the constructor
+      assert(pubKey2Addr(pubkey) == this.address, 'address check failed')
 
-	   // make sure the `sig` is signed by the private key corresponding to the `pubkey`
-        assert(this.checkSig(sig, pubkey), 'signature check failed')
-    }
+   // make sure the `sig` is signed by the private key corresponding to the `pubkey`
+      assert(this.checkSig(sig, pubkey), 'signature check failed')
+  }
 }
 ```
 
@@ -181,15 +186,18 @@ We can call the `unlock` method like this:
 ```ts
 // call
 const address = await testSigner.getAddress();
-const tx = await call(signer, provider, contract, {
-    invokeMethod: (p2pkh: P2PKH, psbt: IExtPsbt) => {
-        // getSig to find a signature
-        const sig = psbt.getSig(0, { address: address });
-        p2pkh.unlock(sig, PubKey(pubkey));
-    }
-})
+const callPsbt = await call(
+  signer, 
+  provider, 
+  contract,
+  (p2pkh: P2PKH, psbt: IExtPsbt) => {
+    // getSig to find a signature
+    const sig = psbt.getSig(0, { address: address });
+    p2pkh.unlock(sig, PubKey(pubkey));
+  }
+)
 
-console.log('contract called: ', callTx.getId());
+console.log('contract called: ', callPsbt.extractTransaction().id);
 ```
 
 When `psbt.getSig` is called, the option contains `address`, requesting a signature against `address`.
@@ -206,15 +214,21 @@ In general, if your `@method` needs `Sig`-typed arguments, you could obtain them
 Here is the complete sample code for the deployment and call of a P2PKH contract.
 
 ```ts
-import { P2PKH } from 'p2pkh'
+import { P2PKH } from '../src/contracts/p2pkh'
 import * as dotenv from 'dotenv'
-import { getDefaultProvider, getDefaultSigner } from './tests/utils/txHelper';
-import { call, deploy, hash160, IExtPsbt, PubKey, uint8ArrayToHex } from '@opcat-labs/scrypt-ts-opcat';
-import { Script } from '@opcat-labs/opcat';
+import { getDefaultProvider, getDefaultSigner } from './utils/txHelper';
+import { call, deploy, hash160, IExtPsbt, PubKey } from '@opcat-labs/scrypt-ts-opcat';
+
+// note: run npx @opcat-labs/cli-opcat compile to generate artifacts
+import p2pkhArtifact from '../artifacts/contracts/p2pkh.json'
 // Load the .env file
 dotenv.config()
 
 async function main() {
+
+
+    P2PKH.loadArtifact(p2pkhArtifact)
+
 
     // setup signer
     const signer = getDefaultSigner();
@@ -225,13 +239,13 @@ async function main() {
     // initialize an instance with `pkh`
     const address = await signer.getAddress();
     const pubkey = await signer.getPublicKey();
-    const pkh = hash160(Script.fromAddress(address).toHex());
+    const pkh = hash160(pubkey);
     
     const p2pkh = new P2PKH(pkh)
     
     // deploy the contract, with 1 satoshi locked in
     const deployTx = await deploy(signer, provider, p2pkh);
-    console.log('P2PKH contract deployed: ', deployTx.getId());
+    console.log('P2PKH contract deployed: ', deployTx.extractTransaction().id);
     
     // call
     const callTx = await call(
@@ -244,7 +258,7 @@ async function main() {
         }
     )
     
-    console.log('P2PKH contract called: ', callTx.getId());
+    console.log('P2PKH contract called: ', callTx.extractTransaction().id);
 
 }
 
@@ -257,15 +271,15 @@ main();
 The deployment and call code is wrapped into a simple NPM command:
 
 ```sh
-npm run testnet
+npx tsx testP2pkh.ts
 ```
 
 Make sure you fund your address before running this command.
 After a successful run you should see something like:
 
 ```
-P2PKH contract deployed:  9d4fb64b08f1b716cf32372789db18fcb4f14c86456c1174f22306e71f948e7f
-P2PKH contract called:  46fd491febb364bd88c619b54580e15c8b9ab59c329a9b57f7cb7e339d9a1b47
+P2PKH contract deployed:  9c7d9442c51881e60d9c4cb3d06ac3849df532855b7ab6f60bdd6369cd2a0a9f
+P2PKH contract called:  ef07b9d7909d8abb716f5385c7b4d518883444d8bd4491ddb6b3173e26741adc
 ```
 
-These are the TXIDs of the transaction which deployed the smart contract and then the one which called its method. You can see the transactions using a [block explorer](https://mempool-testnet.fractalbitcoin.io/tx/9d4fb64b08f1b716cf32372789db18fcb4f14c86456c1174f22306e71f948e7f).
+These are the TXIDs of the transaction which deployed the smart contract and then the one which called its method. You can see the transactions using a [block explorer](https://testnet.opcatlabs.io/tx/9c7d9442c51881e60d9c4cb3d06ac3849df532855b7ab6f60bdd6369cd2a0a9f).

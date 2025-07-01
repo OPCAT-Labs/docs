@@ -27,7 +27,7 @@ Since the new output contains the same contract code, its spending transaction m
 We can create a stateful contract using the following command:
 
 ```sh
-npx scrypt-cli project --state counter
+npx @opcat-labs/cli-opcat project --state counter
 ```
 
 Note the `state` option is turned on.
@@ -72,7 +72,7 @@ this.state.count++;
 const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, Counter.stateHash(this.state));
 const outputs = nextOutput + this.buildChangeOutput();
 // verify unlocking tx has the same outputs
-assert(sha256(outputs) === this.ctx.shaOutputs, `output hash mismatch`);
+assert(hash256(outputs) === this.ctx.hashOutputs, `output hash mismatch`);
 ```
 
 This line of code will ensure that the contract locking script remains unchanged:
@@ -83,13 +83,6 @@ TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, Counter.stateH
 
 The built-in function `Counter.stateHash()` calculates the hash value of the contract state, which will then be stored in an OP_RETURN output.
 
-The built-in function `appendStateOutput()` creates two outputs:
-
-1. an `OP_RETURN` output that holds the latest state hash.
-2. an output containing the contract's locking script.
-
-The built-in function `buildStateOutputs()` returns these two outputs.  The built-in function `buildChangeOutput()` creates a change output when necessary. It will calculate the change amount automatically, and use the signer's address by default.
-
 If all outputs we create in the contract hashes to `shaOutputs` in [ScriptContext](scriptcontext.md), we can be sure they are the outputs of the current transaction. Therefore, the updated state is propagated.
 
 
@@ -97,8 +90,10 @@ The complete stateful contract is as follows:
 
 ```ts
 
+import { SmartContract, StructObject, method, TxUtils, assert } from "@opcat-labs/scrypt-ts-opcat";
+
 export interface CounterState extends StructObject {
-    count: Int32;
+    count: bigint;   
 }
 
 export class Counter extends SmartContract<CounterState> {
@@ -106,14 +101,13 @@ export class Counter extends SmartContract<CounterState> {
     public increase() {
         this.state.count++;
 
-        this.appendStateOutput(
-            // new output of the contract
-            TxUtils.buildOutput(this.ctx.spentScript, this.ctx.spentAmount),
-            // new state hash of the contract
-            Counter.stateHash(this.state),
-        );
+        const nextOutput = TxUtils.buildDataOutput(
+            this.ctx.spentScriptHash,
+            this.ctx.value,
+            Counter.stateHash(this.state)
+        )
 
-        const outputs = this.buildStateOutputs() + this.buildChangeOutput();
+        const outputs = nextOutput + this.buildChangeOutput();
 
         assert(this.checkOutputs(outputs), 'outputs mismatch')
     }
@@ -131,6 +125,7 @@ export class CounterStateLib extends StateLib<CounterState> {
     assert(s.count >= 0n, 'Invalid count');
   }
 }
+
 ```
 
 
@@ -139,25 +134,19 @@ Next, we modify the `Counter` contract. When the `count` state reaches `10`, we 
 ```ts
 
 export class Counter extends SmartContract<CounterState> {
-
   unCounterScriptHash: ByteString;
+  
   @method()
   public increase() {
-
-
     if (this.state.count < 10) {
       this.state.count++;
 
-
-      const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, Counter.stateHash(this.state));
-
+      const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, CounterStateLib.stateHash(this.state));
       const outputs = nextOutput + this.buildChangeOutput();
-
       assert(this.checkOutputs(outputs), 'outputs mismatch')
     } else {
       assert(this.ctx.spentScriptHashes[1] === this.unCounterScriptHash);
     }
-
   }
 }
 ```
