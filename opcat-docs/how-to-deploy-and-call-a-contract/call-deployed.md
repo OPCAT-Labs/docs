@@ -164,19 +164,14 @@ const feeRate = await provider.getFeeRate();
 const utxos = await provider.getUtxos(address);
 
 // build transaction
-const psbt = new ExtPsbt().addContractInput(contract).spendUTXO(utxos);
+const psbt = new ExtPsbt()
+    .addContractInput(contract, (contract: Counter) => {
+        contract.increase()
+    })
+    .spendUTXO(utxos);
 
 // add Counter contract output
 psbt.addContractOutput(newContract, 330);
-
-// update unlocking script
-psbt.updateContractInput(
-    0, 
-    contract, 
-    (contract: Counter) => {
-        contract.increase()
-    }
-);
 
 // add change output
 psbt.change(address, feeRate).seal();
