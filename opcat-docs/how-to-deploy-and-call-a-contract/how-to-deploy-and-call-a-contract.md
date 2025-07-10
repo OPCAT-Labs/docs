@@ -63,10 +63,8 @@ A `Signer` is an abstraction of private keys, which can be used to sign messages
 For testing purposes only, we have a built-in wallet called `DefaultSigner`. It can be created like this:
 
 ```ts
-const keyPair = ECPair.makeRandom({
-    network: toBitcoinNetwork('fractal-mainnet')
-})
-const signer = new DefaultSigner(keyPair);
+const key = PrivateKey.fromRandom(Networks.mainnet);
+const signer = new DefaultSigner(key);
 ```
 
 
@@ -87,12 +85,10 @@ This section could be summarized as the diagram below:
 A signer and a provider must be created before deployment and call. When we are ready to deploy the contract to the testnet/mainnet, we need a real provider like [DefaultProvider](#provider).
 
 ```ts
-import {MempoolProvider, DefaultSigner, fromSupportedNetwork } from "@opcat-labs/scrypt-ts-opcat";
-import { PrivateKey } from "@opcat-labs/opcat";
-
+import {MempoolProvider, DefaultSigner, Networks, PrivateKey } from "@opcat-labs/scrypt-ts-opcat";
 
 const provider = new MempoolProvider('opcat-testnet');
-const signer = new DefaultSigner(PrivateKey.fromRandom(fromSupportedNetwork('opcat-testnet')))
+const signer = new DefaultSigner(PrivateKey.fromRandom(Networks.testnet))
 ```
 
 The `privateKey` must have enough coins. Learn how to fund it on a testnet using a [faucet](./faucet).

@@ -42,7 +42,7 @@ As shown [before](basics#state), smart contracts declare states through generic 
 
 ```ts
 // declare states
-export interface CounterState extends StructObject {
+export interface CounterState extends OpcatState {
     ...
 }
 
@@ -83,16 +83,16 @@ TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, Counter.stateH
 
 The built-in function `Counter.stateHash()` calculates the hash value of the contract state, which will then be stored in an OP_RETURN output.
 
-If all outputs we create in the contract hashes to `shaOutputs` in [ScriptContext](scriptcontext.md), we can be sure they are the outputs of the current transaction. Therefore, the updated state is propagated.
+If all outputs we create in the contract hashes to `hashOutputs` in [ScriptContext](scriptcontext.md), we can be sure they are the outputs of the current transaction. Therefore, the updated state is propagated.
 
 
 The complete stateful contract is as follows:
 
 ```ts
 
-import { SmartContract, StructObject, method, TxUtils, assert } from "@opcat-labs/scrypt-ts-opcat";
+import { SmartContract, OpcatState, method, TxUtils, assert } from "@opcat-labs/scrypt-ts-opcat";
 
-export interface CounterState extends StructObject {
+export interface CounterState extends OpcatState {
     count: bigint;   
 }
 
@@ -145,7 +145,8 @@ export class Counter extends SmartContract<CounterState> {
       const outputs = nextOutput + this.buildChangeOutput();
       assert(this.checkOutputs(outputs), 'outputs mismatch')
     } else {
-      assert(this.ctx.spentScriptHashes[1] === this.unCounterScriptHash);
+      const spentScriptHash = slice(this.ctx.spentScriptHashes, 1n*32n, 2*32n);
+      assert(spentScriptHash === this.unCounterScriptHash);
     }
   }
 }
@@ -166,10 +167,11 @@ export class UnCounter extends SmartContract<CounterState> {
     this.checkInputState(counterInputVal, CounterStateLib.stateHash(counterState));
     
     counterState.count--;
-
+    const spentScriptHash = slice(this.ctx.spentScriptHashes, counterInputVal*32n, (counterInputVal + 1n)*32n);
+    const spentAmount = slice(this.ctx.spentAmounts, counterInputVal*32n, (counterInputVal + 1n)*32n);
     const nextOutput = TxUtils.buildDataOutput(
-      this.ctx.spentScriptHashes[Number(counterInputVal)],
-      TxUtils.byteStringToSatoshis(this.ctx.spentAmounts[Number(counterInputVal)]),
+      spentScriptHash,
+      TxUtils.byteStringToSatoshis(spentAmount),
       CounterStateLib.stateHash(counterState),
     )
     const outputs = nextOutput + this.buildChangeOutput();

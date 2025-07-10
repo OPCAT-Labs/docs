@@ -15,7 +15,7 @@ We will reuse the stateful `Counter` contract [from a previous step](../how-to-w
 
 ```ts
 
-export interface CounterState extends StructObject {
+export interface CounterState extends OpcatState {
     count: Int32;
 }
 
@@ -24,7 +24,7 @@ export class Counter extends SmartContract<CounterState> {
     public increase() {
         this.state.count++;
 
-        const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, CounterStateLib.stateHash(this.state))
+        const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, Counter.stateHash(this.state))
         const outputs = nextOutput + this.buildChangeOutput();
 
         assert(this.checkOutputs(outputs), 'Outputs mismatch with the transaction context');

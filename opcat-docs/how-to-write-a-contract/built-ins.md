@@ -124,6 +124,54 @@ len(s2) // 5
 ```
 
 
+### Bitwise Operator
+
+Bigint in the Bitcoin is stored in [sign–magnitude format](https://en.wikipedia.org/wiki/Signed_number_representations#Sign%E2%80%93magnitude), not [two's complement format](https://en.wikipedia.org/wiki/Signed_number_representations#Two's_complement) commonly used. If the operands are all nonnegative, the result of the operation is consistent with TypeScript's bitwise operator, except `~`. Otherwise, the operation results may be inconsistent and thus undefined. It is strongly recommended to **NEVER** apply bitwise operations on negative numbers.
+
+- `and(x: bigint, y: bigint): bigint` Bitwise AND
+
+```ts
+and(13n, 5n) // 5n
+and(0x0a32c845n, 0x149f72n) // 0x00108840n, 1083456n
+```
+
+- `or(x: bigint, y: bigint): bigint` Bitwise OR
+
+```ts
+or(13n, 5n) // 13n
+or(0x0a32c845n, 0x149f72n) // 0xa36df77n, 171368311n
+```
+
+- `xor(x: bigint, y: bigint): bigint` Bitwise XOR
+
+```ts
+xor(13n, 5n) // 8n
+xor(0x0a32c845n, 0x149f72n) // 0x0a265737n, 170284855n
+```
+
+- `invert(x: bigint): bigint` Bitwise NOT
+
+```ts
+invert(13n)  // -114n
+```
+
+- `lshift(x: bigint, n: bigint): bigint` Arithmetic left shift, returns `x * 2^n`.
+
+```ts
+lshift(2n, 3n)   // 16n
+```
+
+- `rshift(x: bigint, n: bigint): bigint` Arithmetic right shift, returns `x / 2^n`.
+
+```ts
+rshift(21n, 3n)    // 2n
+rshift(1024n, 11n) // 0n
+```
+
+### Exit
+
+- `exit(status: boolean): void` Calling this function will terminate contract execution. If `status` is `true` then the contract succeeds; otherwise, it fails.
+
 ## `SmartContract` Methods
 
 The following `@method`s come with the `SmartContract` base class.
@@ -232,7 +280,7 @@ class Auction extends SmartContract {
     // Add change output.
     outputs += this.buildChangeOutput()
 
-    assert(sha256(outputs) == this.ctx.shaOutputs, 'shaOutputs check failed')
+    assert(sha256(outputs) == this.ctx.hashOutputs, 'hashOutputs check failed')
   }
 }
 ```
@@ -251,7 +299,8 @@ psbt.addUTXO(utxos)   // add inputs and outputs
 .addContractOutput(contract, satoshis)
 .change(address, feeRate);   // add change output explicitly
 ```
-<!-- 
+
+
 ### `timeLock`
 
 Function `timeLock(locktime: bigint): boolean` returns whether the calling transaction has its [`nLocktime`](https://wiki.bitcoinsv.io/index.php/NLocktime_and_nSequence) value set to a point past the passed `locktime` value. This value can either be a UNIX timestamp or a block height. Additionally, it ensures the value of `nSequence` is set to less than `0xFFFFFFFF`.
@@ -277,8 +326,6 @@ class TimeLock extends SmartContract {
 :::note
 This mechanism can be employed solely to ensure that a method can be called **after** a specific point in time. In contrast, it cannot be employed to ensure that a method is called **before** a specific point in time.
 :::
-
-To learn more about time locks, see the [dedicated doc section](../advanced/timeLock.md). -->
 
 
 ## Standard Libraries
@@ -332,3 +379,5 @@ TxUtils.satoshisToByteString(100000000n) // '00e1f50500000000'
 ```ts
 TxUtils.byteStringToSatoshis(toByteString('00e1f50500000000')) // 100000000n
 ```
+
+

@@ -12,9 +12,9 @@ When it runs incorrectly, you need to master the following methods to locate the
 
 ## hashOutputs assertion failed
 
-The `shaOutputs` field of `ScriptContext` is the SHA256 of the serialization of all output amount (8-byte little endian) with scriptPubKey. Through it, we can agree on how the outputs of the transaction calling the contract should be constructed.
+The `hashOutputs` field of `ScriptContext` is the SHA256 of the serialization of all output amount (8-byte little endian) with scriptPubKey. Through it, we can agree on how the outputs of the transaction calling the contract should be constructed.
 
-If the output of the transaction is not constructed as required by the contract, then the `shaOutputs` of `ScriptContext` field will not match the the SHA256 of the `outputs` produced in the code when the contract runs. The following assertion will fail:
+If the output of the transaction is not constructed as required by the contract, then the `hashOutputs` of `ScriptContext` field will not match the the SHA256 of the `outputs` produced in the code when the contract runs. The following assertion will fail:
 
 ```ts
 assert(this.checkOutputs(outputs), 'mismatch outputs');
@@ -22,14 +22,14 @@ assert(this.checkOutputs(outputs), 'mismatch outputs');
 The code above is equivalent to the following:
 
 ```ts
-assert(sha256(outputs) === this.ctx.shaOutputs, `outputs hash mismatch`);
+assert(hash256(outputs) === this.ctx.hashOutputs, `outputs hash mismatch`);
 ```
 
 
 We all know that if the preimage of the hash is inconsistent, the hash value will not match. When an assertion failure occurs, we can only see two mismatched hash values, and cannot visually see the difference between the preimages of the two hash values (that is, the `outputs` in the contract and the outputs of the transaction).
 
 
-A function `diffOutputs` in DebugFunctions Interface is provided to directly compare the difference between the outputs argument and all the outputs of the transaction, which are serialized and hashed to produce the `shaOutputs` field of `ScriptContext`.
+A function `diffOutputs` in DebugFunctions Interface is provided to directly compare the difference between the outputs argument and all the outputs of the transaction, which are serialized and hashed to produce the `hashOutputs` field of `ScriptContext`.
 
 Just call `this.debug.diffOutputs(outputs)` in the contract:
 

@@ -186,7 +186,7 @@ You can directly access the context through `this.ctx` in any public `@method`. 
 The example below accesses the spentScript of the spending transaction. 
 
 ```ts
-import { assert, ByteString, sha256, method, SmartContract, TxUtils, UInt64 } from '@opcat-labs/scrypt-ts-opcat';
+import { assert, ByteString, method, SmartContract, TxUtils, UInt64 } from '@opcat-labs/scrypt-ts-opcat';
 
 export class Clone extends SmartContract {
   constructor() {
@@ -218,7 +218,7 @@ The following example ensures both Alice and Bob get 1000 satoshis from the cont
 ```ts
 
 
-import { method, prop, SmartContract, assert, Addr, ByteString, TxUtils, sha256 } from '@opcat-labs/scrypt-ts-opcat';
+import { method, prop, SmartContract, assert, Addr, ByteString, TxUtils } from '@opcat-labs/scrypt-ts-opcat';
 
 export class DesignatedReceivers extends SmartContract {
     @prop()

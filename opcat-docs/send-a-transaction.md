@@ -7,7 +7,7 @@ This guide will walk you through the complete process of sending a transaction o
 Before you begin, make sure you have the necessary packages installed:
 
 ```bash
-npm install @opcat-labs/opcat @opcat-labs/scrypt-ts-opcat
+npm install @opcat-labs/scrypt-ts-opcat
 ```
 
 ## Step 1: Generate a Private Key
@@ -15,8 +15,7 @@ npm install @opcat-labs/opcat @opcat-labs/scrypt-ts-opcat
 First, let's create a private key and corresponding address for the testnet:
 
 ```ts
-import { PrivateKey, Networks } from "@opcat-labs/opcat";
-import { DefaultSigner } from "@opcat-labs/scrypt-ts-opcat";
+import { DefaultSigner, PrivateKey, Networks } from "@opcat-labs/scrypt-ts-opcat";
 
 const generatePrivateKey = async () => {
     const privateKeyWif = PrivateKey.fromRandom(Networks.testnet).toWIF()
@@ -120,8 +119,7 @@ Here's the complete code combining all steps:
 
 ```ts
 // generatePrivateKey.ts
-import { PrivateKey, Networks } from "@opcat-labs/opcat";
-import { DefaultSigner } from "@opcat-labs/scrypt-ts-opcat";
+import { DefaultSigner, PrivateKey, Networks } from "@opcat-labs/scrypt-ts-opcat";
 
 const generatePrivateKey = async () => {
     const privateKeyWif = PrivateKey.fromRandom(Networks.testnet).toWIF()
@@ -140,8 +138,7 @@ generatePrivateKey().then(console.log)
 
 ```ts
 // sendTx.ts
-import { PrivateKey } from "@opcat-labs/opcat"
-import { DefaultSigner, ExtPsbt, MempoolProvider } from "@opcat-labs/scrypt-ts-opcat"
+import { DefaultSigner, ExtPsbt, MempoolProvider, PrivateKey } from "@opcat-labs/scrypt-ts-opcat"
 
 const main = async () => {
     const provider = new MempoolProvider('opcat-testnet')

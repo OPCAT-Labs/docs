@@ -22,7 +22,7 @@ According to the interactions above, this contract needs to store one properties
 
 ```ts
 
-export interface AuctionState extends StructObject {
+export interface AuctionState extends OpcatState {
     // The bidder's public key.
     bidder: ByteString;
 }
@@ -259,14 +259,14 @@ import {
     PubKey,
     SmartContract,
     TxUtils,
-    StructObject,
+    OpcatState,
     prop,
     Addr,
     hash160,
     Sig,
 } from '@opcat-labs/scrypt-ts-opcat';
   
-export interface AuctionState extends StructObject {
+export interface AuctionState extends OpcatState {
     bidder: ByteString;
 }
 
@@ -299,7 +299,7 @@ export class Auction extends SmartContract<AuctionState> {
         const refundOutput: ByteString = TxUtils.buildOutput(refundScript, this.ctx.spentAmount);
         const outputs: ByteString = this.buildStateOutputs() + refundOutput + this.buildChangeOutput();
 
-        assert(this.checkOutputs(outputs), 'shaOutputs check failed');
+        assert(this.checkOutputs(outputs), 'hashOutputs check failed');
     }
     @method()
     public close(sig: Sig) {

@@ -544,11 +544,11 @@ export enum Status {
 
 ### Contract State
 
-The contract's state is a user-defined `interface`, but it must extend `StructObject`.
+The contract's state is a user-defined `interface`, but it must extend `OpcatState`.
 
 
 ```ts
-export interface CounterState extends StructObject {
+export interface CounterState extends OpcatState {
     count: bigint;
 }
 ```
@@ -570,21 +570,23 @@ Use `this.state` to access and update the contract's state.
 this.state.count++;
 ```
 
-Use `this.appendStateOutput()` to save the state.
+Use `Counter.serializeState()` to save the state.
 
 ```ts
-this.appendStateOutput(
-    // new output of the contract
-    TxUtils.buildOutput(this.ctx.spentScript, this.ctx.spentAmount),
-    // new state hash of the contract
-    Counter.stateHash(this.state),
-);
+const stateHash = sha256(Counter.serializeState(this.state))
+const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, stateHash)
+```
+
+Or use `CounterStateLib.stateHash(this.state)` to build output including the state hash.
+
+```ts
+const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, Counter.stateHash(this.state))
 ```
 
 Use `this.checkOutputs()` to check if all the transaction outputs are built according to the contract's constraints.
 
 ```ts
-const outputs = this.buildStateOutputs() + this.buildChangeOutput();
+const outputs = nextOutput + this.buildChangeOutput();
 
 assert(this.checkOutputs(outputs), 'outputs mismatch')
 ```
@@ -592,25 +594,36 @@ assert(this.checkOutputs(outputs), 'outputs mismatch')
 The final complete `Counter` contract code:
 
 ```ts
-export interface CounterState extends StructObject {
-    count: bigint;
+import {
+  SmartContract,
+  method,
+  assert,
+  StateLib,
+  OpcatState,
+  Int32,
+  sha256,
+  TxUtils,
+} from '@opcat-labs/scrypt-ts-opcat';
+
+export interface CounterState extends OpcatState {
+  count: Int32
 }
+
 
 export class Counter extends SmartContract<CounterState> {
-    @method()
-    public increase() {
-        this.state.count++;
-        this.appendStateOutput(
-            // new output of the contract
-            TxUtils.buildOutput(this.ctx.spentScript, this.ctx.spentAmount),
-            // new state hash of the contract
-            Counter.stateHash(this.state),
-        );
-        const outputs = this.buildStateOutputs() + this.buildChangeOutput();
-        assert(this.checkOutputs(outputs), 'outputs mismatch')
-    }
-}
+  @method()
+  public increase() {
+    this.state.count++;
 
+    // const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, Counter.stateHash(this.state) )
+    // const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, sha256(Counter.serializeState(this.state)));
+    // const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, Counter.stateHash(this.state) )
+    const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, Counter.stateHash(this.state))
+    const outputs = nextOutput + this.buildChangeOutput();
+
+    assert(this.checkOutputs(outputs), 'Outputs mismatch with the transaction context');
+  }
+}
 ```
 
 
