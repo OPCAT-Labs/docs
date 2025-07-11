@@ -328,6 +328,70 @@ This mechanism can be employed solely to ensure that a method can be called **af
 :::
 
 
+### `checkInputState`
+
+Check state of the input. By default, the system checks the state of the input.
+If you use this function to specify checking only specific inputs' State, you must set the `autoCheckInputState`
+option in the `@method()` decorator to false.
+
+```ts
+export class Counter extends SmartContract<CounterState> {
+  @method({
+      autoCheckInputState: false
+    })
+  public increase() {
+    this.checkInputState(this.ctx.inputIndex, CounterStateLib.serializeState(this.state))
+    this.state.count++;
+    const nextOutput = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, CounterStateLib.stateHash(this.state))
+    const outputs = nextOutput + this.buildChangeOutput();
+    assert(this.checkOutputs(outputs), 'Outputs mismatch with the transaction context');
+  }
+}
+```
+
+### `backtraceToOutpoint` and `backtraceToScript`
+
+Funtion `backtraceToOutpoint` is for checking whether the contract can be traced back to the genesis outpoint.
+
+Funtion `backtraceToScript` is for checking whether the contract can be traced back to the genesis script.
+
+Both functions accept the `BacktraceInfo` parameter, which contains the following fields: 
+
+```ts
+/**
+ * @type {TxIn}
+ * the traceable input in the previous transaction
+ */
+prevTxInput: TxIn;
+
+/**
+ * @type {Int32}
+ * the index of the traceable input in the previous transaction
+ */
+prevTxInputIndex: Int32;
+
+/**
+ * @type {TxHashPreimage}
+ * the preimage of the previous previous transaction
+ */
+prevPrevTxPreimage: TxHashPreimage;
+```
+
+To retrieve the `BacktraceInfo`, specify `{"withBackTraceInfo" : true}` in [CallOptions](../how-to-deploy-and-call-a-contract/call-deployed#calloptions).
+
+If `withBackTraceInfo` is specified, you can also set `prevPrevTxFinder` to determine how to locate previous transactions. If not specified, the default finder will be used. The default finder starts searching from the 0th input of the transaction.  Here is the implementation of the default finder:
+
+```ts
+const prevPrevTxFinder = async (prevTx: Transaction, provider: UtxoProvider & ChainProvider, _inputIndex: InputIndex) => {
+    const prevTxId = uint8ArrayToHex(prevTx.inputs[0].prevTxId);
+    const prevTxHex = await provider.getRawTransaction(prevTxId);
+    return prevTxHex;
+}
+```
+
+
+
+
 ## Standard Libraries
 
 `sCrypt` comes with standard libraries that define many commonly used functions.
@@ -380,4 +444,223 @@ TxUtils.satoshisToByteString(100000000n) // '00e1f50500000000'
 TxUtils.byteStringToSatoshis(toByteString('00e1f50500000000')) // 100000000n
 ```
 
+### `StdUtils`
 
+`StdUtils` is a utility class providing standard helper methods for working with `ByteStrings` and `numeric` conversions.
+
+- `checkLenDivisibleBy` Checks if the length of a ByteString is divisible by a given number and returns the quotient.
+
+```ts
+assert(inputCount == StdUtils.checkLenDivisibleBy(spentScriptHashes, 32n), 'invalid spentScriptHashes');
+```
+
+- `uint64ToByteString` Converts a UInt64 value to a little-endian ByteString.
+
+```ts
+StdUtils.uint64ToByteString(100n);
+```
+
+- `uint32ToByteString` Converts a UInt32 number to a 4-byte little-endian ByteString.
+
+```ts
+StdUtils.uint32ToByteString(100n);
+```
+
+- `byteStringToUInt32` Converts a 4-byte ByteString to an unsigned 32-bit integer in little-endian format.
+
+```ts
+StdUtils.byteStringToUInt32(tobyteString('00000064'));
+```
+
+- `toLEUnsigned`  Converts signed integer `n` to unsigned integer of `l` string, in little endian
+
+```ts
+StdUtils.toLEUnsigned(100n, 4n)
+```
+
+- `fromLEUnsigned` Converts `ByteString` to unsigned integer, in sign-magnitude little endian
+
+```ts
+StdUtils.fromLEUnsigned(tobyteString('00000064'))
+```
+
+- `writeVarInt` Encodes a bigint into a variable-length integer (VarInt) format as ByteString.
+
+```ts
+StdUtils.writeVarInt(1n)
+```
+
+- `pushData` Pushes data to a buffer with appropriate size header.
+
+```ts
+StdUtils.pushData(tobyteString('00000064'))
+```
+
+- `readVarint`  read [VarInt (variable integer)]{@link https://learnmeabitcoin.com/technical/general/compact-size/}-encoded data from the `pos` of `buf`
+
+```ts
+StdUtils.readVarint(StdUtils.writeVarInt(1n), 0n)
+```
+
+### `StateLib`
+
+When a contract's state must be shared across contracts or be accessible to other contracts, the `StateLib` library should be employed.
+
+- `serializeState` Serializes the given state object into a ByteString.
+
+```ts
+MyStateLib.serializeState(contractState)
+```
+
+- `stateHash` Computes the SHA-256 hash of the given state object.
+
+```ts
+MyStateLib.stateHash(contractState)
+```
+
+### `ByteStringWriter`
+
+`ByteStringWriter` is a writer for serializing `ByteString`, `boolean`, `bigint`
+
+```ts
+let writer = new ByteStringWriter();
+writer.writeByteString(tobyteString('00000064'));
+writer.writeBoolean(true);
+writer.writeVarInt(100n);
+let bs = writer.buf;
+```
+
+### `ByteStringReader`
+
+`ByteStringReader` is a reader for deserializing `ByteString`, `boolean`, `bigint`
+
+
+```ts
+let reader = new ByteStringReader(data);
+let data1 = reader.readBytes();
+let data2 = reader.readBoolean();
+let data3 = reader.readVarint();
+```
+
+### `ContextUtils`
+
+`ContextUtils` is a Utility class for smart contract context operations.
+
+It provides methods for:
+
+- ECDSA signature generation and verification
+- Transaction preimage serialization and validation
+- Prevouts and spent data verification
+- Lock time checking
+- Various cryptographic and serialization utilities
+
+- `sign`  Generates a DER-encoded ECDSA signature from given parameters.
+
+```ts
+const preimage = ContextUtils.serializeSHPreimage(shPreimage);
+
+const h: ByteString = hash256(preimage);
+const sig: Sig = ContextUtils.sign(
+  ContextUtils.fromBEUnsigned(h), 
+  ContextUtils.privKey, 
+  ContextUtils.invK,
+    ContextUtils.r, 
+    ContextUtils.rBigEndian,
+    sigHashType);
+```
+
+- `serializeSHPreimage` Serializes a `SHPreimage` object into a ByteString.
+
+```ts
+const preimage = ContextUtils.serializeSHPreimage(shPreimage);
+```
+
+- `checkPrevouts` Verify that the prevouts context passed in by the user is authentic
+
+```ts
+// verify this.ctx.shaPrevouts and Prevouts
+ContextUtils.checkPrevouts(
+  this.ctx.prevouts,
+  this.ctx.hashPrevouts,
+  this.ctx.inputIndex,
+  this.ctx.inputCount,
+);
+```
+
+- `checkSpentScripts` Check if the spent scripts array passed in matches the `hashSpentDataHashes`
+
+```ts
+// verify this.ctx.hashSpentDataHashes and SpentScripts
+ContextUtils.checkSpentScripts(this.ctx.spentScriptHashes, this.ctx.hashSpentDataHashes, inputCount);
+```
+
+
+- `checkSpentAmounts` Check if the spent amounts array passed in matches the hashSpentAmounts
+
+```ts
+// verify this.ctx.hashSpentAmounts and SpentAmounts
+ContextUtils.checkSpentAmounts(this.ctx.spentAmounts, this.ctx.hashSpentAmounts, inputCount);
+```
+
+- `checkSpentDataHashes` Verifies the integrity of spent data hashes against the provided transaction hash and input count.
+
+```ts
+ContextUtils.checkSpentDataHashes(this.ctx.spentDataHashes, this.ctx.hashSpentDataHashes, inputCount);
+```
+
+- `getSpentScriptHash` Retrieves the script hash of a spent input at the specified index.
+
+```ts
+const spentScriptHash = ContextUtils.getSpentScriptHash(this.ctx.spentScriptHashes, this.ctx.inputIndex)
+```
+
+
+- `getSpentAmount` Retrieves the spent amount for a specific input index from the given SpentAmounts.
+
+```ts
+const spentAmount = ContextUtils.getSpentAmount(this.ctx.spentAmounts, this.ctx.inputIndex)
+```
+
+- `getSpentDataHash` Retrieves the data hash for a specific input from the spent data hashes.
+
+```ts
+const dataHash = ContextUtils.getSpentDataHash(this.ctx.spentDataHashes, this.ctx.inputIndex)
+```
+
+- `checknLockTime` Checks if the lock time conditions are met for a given preimage and lock time.
+
+```ts
+let block = 10000n
+assert(ContextUtils.checknLockTime(this.ctx, block), "Locktime not met");
+```
+
+
+### `TxHashPreimageUtils`
+
+A utility class for working with transaction hash preimages in Opcat smart contracts.
+
+It provides methods to:
+
+- Calculate transaction hash from preimage data
+- Extract individual input/output byte strings from preimage
+
+- `getTxHashFromTxHashPreimage` Computes the transaction hash from a given transaction hash preimage.
+
+```ts
+const txHash = TxHashPreimageUtils.getTxHashFromTxHashPreimage(txHashPreimage);
+assert(txHash == slice(this.ctx.prevouts, inputIndex * 36n, inputIndex * 36n + 32n), 'prevTxHash mismatch');
+```
+
+- `getInputByteString` Extracts the byte string of a specific input from the transaction hash preimage.
+
+```ts
+// inputByteString = prevout(36 bytes) + unlockScriptHash(32 bytes) + sequence(4 bytes)
+const inputByteString = TxHashPreimageUtils.InputByteString(txHashPreimage, inputIndex);
+```
+
+- `getOutputByteString` Extracts the byte string of a specific output from the transaction hash preimage.
+
+```ts
+// outputByteString = amount(8 bytes) + lockingScriptHash(32 bytes) + dataHash(32 bytes)
+const outputByteString = TxHashPreimageUtils.getOutputByteString(txHashPreimage, inputIndex);
+```

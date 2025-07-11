@@ -79,7 +79,44 @@ This function will help you construct transactions to call the contract. It take
 2. a [provider](../how-to-deploy-and-call-a-contract#provider) - *required*
 3. a contract to be called - *required*
 4. a subContractCall - used to specify which contract to use for unlocking - *required*
-5. a new contract which can be get by `contract.next(new state)` and its locked satoshis,  - *optional*
+5. a call options
+
+### CallOptions
+
+Here is the definition of CallOptions:
+
+
+```ts
+/**
+ * Options for calling a smart contract method.
+ * @property contract - The smart contract instance to call.
+ * @property satoshis - Amount of satoshis to send with the call.
+ * @property lockTime - Lock time for the transaction.
+ * @property sequence - Sequence number for the transaction.
+ * @property changeAddress - Address to receive change.
+ * @property feeRate - Fee rate in satoshis per byte.
+ * @property withBackTraceInfo - Whether to include backtrace info.
+ * @property unfinalize - Whether to keep transaction unfinalized.
+ * @property prevPrevTxFinder - Function to find previous transaction for an input.
+ */
+export type CallOptions = {
+  contract?: SmartContract<OpcatState>; 
+  satoshis?: number, 
+  lockTime?: number,
+  sequence?: number, 
+  changeAddress?: string, 
+  feeRate?: number,
+  withBackTraceInfo?: boolean,
+  unfinalize?: boolean,
+  prevPrevTxFinder?: (prevTx: Transaction, provider: UtxoProvider & ChainProvider, inputIndex: InputIndex) => Promise<string>
+}
+```
+
+For stateful contracts, use `contract.next(new state)` to obtain a new instance of the contract:
+
+```ts
+const newCounter = counter.next({ count: counter.state.count + 1n });
+```
 
 
 Let's encapsulate the entire process within a main function, designed to deploy the contract and increment its value five times:
