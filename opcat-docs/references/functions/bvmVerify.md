@@ -8,7 +8,7 @@
 
 > **bvmVerify**(`extPsbt`, `inputIndex`): `string` \| `true`
 
-Defined in: [packages/scrypt-ts-opcat/src/utils/bvm.ts:10](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/utils/bvm.ts#L10)
+Defined in: [packages/scrypt-ts-opcat/src/utils/bvm.ts:10](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/utils/bvm.ts#L10)
 
 Verify that an input of `ExtPsbt` can be unlocked correctly. The extPsbt should be finalized.
 

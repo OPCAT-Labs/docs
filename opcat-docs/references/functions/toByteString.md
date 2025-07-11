@@ -8,7 +8,7 @@
 
 > **toByteString**(`literal`, `isUtf8`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/fns/byteString.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/fns/byteString.ts#L16)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/fns/byteString.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/fns/byteString.ts#L16)
 
 Converts a literal to ByteString.
 If not passing `isUtf8` or `isUtf8` is false, then `literal` should be in the format of hex literal, i.e. `/^([0-9a-fA-F]{2})*$/`

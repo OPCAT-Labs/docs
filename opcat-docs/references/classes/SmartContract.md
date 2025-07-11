@@ -6,7 +6,7 @@
 
 # Class: SmartContract\<StateT\>
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:54](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L54)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:54](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L54)
 
 The main contract class. To write a contract, extend this class as such:
 
@@ -34,7 +34,7 @@ class YourSmartContract extends SmartContract {
 
 > **new SmartContract**\<`StateT`\>(...`args`): [`SmartContract`](SmartContract.md)\<`StateT`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:106](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L106)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:106](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L106)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:106](h
 
 > **backtraceToOutpoint**(`backtraceInfo`, `genesisOutpoint`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:654](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L654)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:654](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L654)
 
 Check whether the contract can be traced back to the genesis outpoint.
 
@@ -92,7 +92,7 @@ true if the contract can be backtraced to the genesis outpoint. Otherwise false.
 
 > **backtraceToScript**(`backtraceInfo`, `genesisScript`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:666](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L666)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:666](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L666)
 
 Check whether the contract can be traced back to the genesis script.
 
@@ -128,7 +128,7 @@ true if the contract can be backtraced to the genesis script. Otherwise false.
 
 > `readonly` **lockingScript**: `Script`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:89](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L89)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:89](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L89)
 
 Locking script corresponding to the SmartContract
 
@@ -138,7 +138,7 @@ Locking script corresponding to the SmartContract
 
 > **state**: `StateT`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:84](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L84)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:84](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L84)
 
 The state of the contract UTXO, usually committed to the first OP_RETURN output, is revealed when spending.
 
@@ -150,7 +150,7 @@ The state of the contract UTXO, usually committed to the first OP_RETURN output,
 
 > `optional` **utxo**: [`ExtUtxo`](../type-aliases/ExtUtxo.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:78](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L78)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:78](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L78)
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:78](ht
 
 > `static` **artifact**: [`Artifact`](../interfaces/Artifact.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:60](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L60)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:60](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L60)
 
 Bitcoin Contract Artifact
 
@@ -170,7 +170,7 @@ Bitcoin Contract Artifact
 
 > **get** **changeInfo**(): [`TxOut`](../type-aliases/TxOut.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:518](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L518)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:518](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L518)
 
 Get the change info of the change output for current psbt.
 
@@ -190,7 +190,7 @@ the change info of current psbt
 
 > **get** **ctx**(): `IContext`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:319](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L319)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:319](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L319)
 
 Get the context details of the current PSBT input in which this contract is called or spent.
 
@@ -212,7 +212,7 @@ Get the context details of the current PSBT input in which this contract is call
 
 > **get** **debug**(): `object`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:527](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L527)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:527](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L527)
 
 A set of functions for debugging contracts, which can only be called in `@method` methods.
 
@@ -244,7 +244,7 @@ A set of functions for debugging contracts, which can only be called in `@method
 
 > **get** **inputContext**(): `InputContext`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:371](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L371)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:371](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L371)
 
 Get the context of the current PSBT input in which this contract is called or spent.
 
@@ -262,7 +262,7 @@ the context of the current PSBT input
 
 > **get** **spentPsbt**(): `Contextual`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:354](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L354)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:354](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L354)
 
 Gets the PSBT (Partially Signed Bitcoin Transaction) that was used to spend this contract.
 Returns undefined if no spending transaction exists.
@@ -277,7 +277,7 @@ Returns undefined if no spending transaction exists.
 
 > **bindToUtxo**(`utxo`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:690](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L690)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:690](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L690)
 
 Binds the smart contract to a UTXO by verifying and setting its script.
 
@@ -305,7 +305,7 @@ Error if the UTXO's script exists and doesn't match the contract's locking scrip
 
 > **buildChangeOutput**(): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:208](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L208)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:208](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L208)
 
 A built-in function to create an [change output][https://en.bitcoin.it/wiki/Change](https://en.bitcoin.it/wiki/Change).
 
@@ -325,7 +325,7 @@ A built-in function to create an [change output][https://en.bitcoin.it/wiki/Chan
 
 > **checkInputState**(`inputIndex`, `serializedState`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:299](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L299)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:299](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L299)
 
 check state of the input. 
 option in the `@method()` decorator to false.
@@ -362,7 +362,7 @@ success if stateHash is valid
 
 > **checkOutputs**(`outputs`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:568](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L568)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:568](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L568)
 
 Check the outputs with the context of current transaction.
 
@@ -392,7 +392,7 @@ true if the outputs are not consistent with the transaction context, otherwise f
 
 > **checkSHPreimage**(`shPreimage`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:161](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L161)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:161](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L161)
 
 Using the [OP_PUSH_TX][https://medium.com/@xiaohuiliu/op-push-tx-3d3d279174c1](https://medium.com/@xiaohuiliu/op-push-tx-3d3d279174c1) technique, check if `shPreimage` is the preimage of the current transaction.
 
@@ -420,7 +420,7 @@ true if `shPreimage` is the preimage of the current transaction. Otherwise false
 
 > **getCallData**(): `MethodCallData`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:591](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L591)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:591](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L591)
 
 Gets the method call data for the current smart contract.
 
@@ -440,7 +440,7 @@ If no method call is found.
 
 > **getUnlockingScript**(): `Script`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:581](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L581)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:581](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L581)
 
 Returns the raw arguments from the call data of the smart contract.
 
@@ -456,7 +456,7 @@ The raw arguments extracted from the call data.
 
 > **isPubFunction**(`method`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:407](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L407)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:407](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L407)
 
 Checks if the given method is a public function in the smart contract.
 
@@ -480,7 +480,7 @@ True if the method is a public function, false otherwise.
 
 > **next**(`newState`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:676](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L676)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:676](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L676)
 
 Get a new contract instance with the new state.
 
@@ -504,7 +504,7 @@ the new covenant
 
 > **setSighashType**(`sigHashType`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:362](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L362)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:362](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L362)
 
 Sets the signature hash type for the current input in the PSBT.
 
@@ -526,7 +526,7 @@ The signature hash type to set
 
 > **spentFromInput**(`psbt`, `inputIndex`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:345](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L345)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:345](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L345)
 
 Mark the contract instance as spent from the input of the PSBT.
 
@@ -550,7 +550,7 @@ Mark the contract instance as spent from the input of the PSBT.
 
 > **timeLock**(`nLockTime`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:623](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L623)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:623](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L623)
 
 Checks a locktime parameter with the transaction's locktime.
 There are two times of nLockTime: lock-by-blockheight and lock-by-blocktime,
@@ -589,7 +589,7 @@ true if the transaction's locktime is less than or equal to
 
 > `static` **create**\<`T`\>(`this`, ...`args`): `InstanceType`\<`T`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:144](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L144)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:144](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L144)
 
 Used to create an instance of a smart contract. If your smart contract has a base class, you must use this method to instantiate it.
 
@@ -617,7 +617,7 @@ Used to create an instance of a smart contract. If your smart contract has a bas
 
 > `static` **deserializeState**\<`T`\>(`this`, `serializedState`): `T`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:258](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L258)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:258](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L258)
 
 Deserializes the contract state from a ByteString.
 
@@ -655,7 +655,7 @@ Error if artifact is not loaded or state type is not defined
 
 > `static` **isStateful**(): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:708](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L708)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:708](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L708)
 
 Checks if the contract has state by verifying if the state object exists and is not empty.
 
@@ -671,7 +671,7 @@ True if the contract has state, false otherwise.
 
 > `static` **loadArtifact**(`artifact`): *typeof* [`SmartContract`](SmartContract.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:96](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L96)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:96](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L96)
 
 This function is usually called on the frontend.
 The contract class needs to call this function before instantiating.
@@ -694,7 +694,7 @@ a contract artifact json object
 
 > `static` **serializeState**\<`T`\>(`this`, `state`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:232](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L232)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:232](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L232)
 
 Serializes the contract state into a ByteString.
 
@@ -738,7 +738,7 @@ Error if artifact is not loaded or state type is not defined
 
 > `static` **stateHash**\<`T`\>(`this`, `state`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:284](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L284)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:284](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L284)
 
 Computes the SHA-256 hash of the serialized contract state.
 
@@ -776,7 +776,7 @@ ByteString containing the SHA-256 hash of the serialized state
 
 > **checkMultiSig**(`signatures`, `publickeys`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:199](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L199)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:199](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L199)
 
 Compares the first signature against each public key until it finds an ECDSA match. 
 Starting with the subsequent public key, it compares the second signature against 
@@ -810,7 +810,7 @@ valid, 1 is returned, 0 otherwise. Due to a bug, one extra unused value is remov
 
 > **checkSig**(`signature`, `publickey`, `errorMsg`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:171](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L171)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts:171](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContract.ts#L171)
 
 A built-in function verifies an Schnorr signature. It takes two inputs from the stack, a public key (on top of the stack) and an Schnorr signature in its DER_CANONISED format concatenated with sighash flags.
 It outputs true or false on the stack based on whether the signature check passes or fails. [see][https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki#specification](https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki#specification)

@@ -6,7 +6,7 @@
 
 # Interface: Signer
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:37](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L37)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:37](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L37)
 
 A `Signer` is a interface which in some way directly or indirectly has access to a private key, which can sign messages and transactions to authorize the network to perform operations.
 
@@ -16,7 +16,7 @@ A `Signer` is a interface which in some way directly or indirectly has access to
 
 > **getAddress**(): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:39](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L39)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:39](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L39)
 
 Get address of current signer.
 
@@ -30,7 +30,7 @@ Get address of current signer.
 
 > **getPublicKey**(): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:41](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L41)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:41](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L41)
 
 Get publicKey of current signer.
 
@@ -44,7 +44,7 @@ Get publicKey of current signer.
 
 > **signPsbt**(`psbtHex`, `options`?): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:43](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L43)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:43](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L43)
 
 traverse all inputs that match the current address to sign.
 
@@ -68,7 +68,7 @@ traverse all inputs that match the current address to sign.
 
 > **signPsbts**(`reqs`): `Promise`\<`string`[]\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:45](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L45)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:45](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L45)
 
 same as signPsbt, but sign multiple PSBTs at once.
 

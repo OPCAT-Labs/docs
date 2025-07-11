@@ -6,7 +6,7 @@
 
 # Class: MempoolProvider
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:12](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L12)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:12](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L12)
 
 The MempoolProvider is backed by [Mempool][https://opcatlabs.io](https://opcatlabs.io)
 
@@ -21,7 +21,7 @@ The MempoolProvider is backed by [Mempool][https://opcatlabs.io](https://opcatla
 
 > **new MempoolProvider**(`network`): [`MempoolProvider`](MempoolProvider.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:18](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L18)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:18](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L18)
 
 #### Parameters
 
@@ -39,7 +39,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:18](https
 
 > `readonly` **network**: [`SupportedNetwork`](../type-aliases/SupportedNetwork.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:18](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L18)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:18](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L18)
 
 ## Methods
 
@@ -47,7 +47,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:18](https
 
 > **addNewUTXO**(`utxo`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:81](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L81)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:81](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L81)
 
 Add a UTXO to the provider
 
@@ -71,7 +71,7 @@ Add a UTXO to the provider
 
 > **broadcast**(`txHex`): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:186](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L186)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:186](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L186)
 
 Send a raw transaction hex string.
 
@@ -97,7 +97,7 @@ A promise which resolves to the hash of the transaction that has been sent.
 
 > **getConfirmations**(`txId`): `Promise`\<`number`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:103](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L103)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:103](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L103)
 
 Query a transaction confirmation
 
@@ -121,7 +121,7 @@ Query a transaction confirmation
 
 > **getFeeRate**(): `Promise`\<`number`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:85](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L85)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:85](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L85)
 
 Query current network fee
 
@@ -139,7 +139,7 @@ Query current network fee
 
 > **getNetwork**(): `Promise`\<[`SupportedNetwork`](../type-aliases/SupportedNetwork.md)\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:20](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L20)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:20](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L20)
 
 Get the current network the provider is connected to.
 
@@ -159,7 +159,7 @@ A promise which resolves to the current network identifier.
 
 > **getRawTransaction**(`txId`): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:195](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L195)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:195](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L195)
 
 Get a transaction raw hex from the network.
 
@@ -185,7 +185,7 @@ The query result with the transaction raw hex.
 
 > **getUtxos**(`address`, `_options`?): `Promise`\<[`UTXO`](../interfaces/UTXO.md)[]\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:24](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L24)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:24](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L24)
 
 Get a list of the UTXOs.
 
@@ -217,7 +217,7 @@ A promise which resolves to a list of UTXO for the query options.
 
 > **markSpent**(`txId`, `vout`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:74](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L74)
+Defined in: [packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts:74](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/mempoolProvider.ts#L74)
 
 Mark an outpoint as spent
 

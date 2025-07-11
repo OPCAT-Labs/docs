@@ -6,7 +6,7 @@
 
 # Interface: ToSignInput
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L16)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L16)
 
 signPsbt input options
 
@@ -16,7 +16,7 @@ signPsbt input options
 
 > `optional` **address**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:20](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L20)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:20](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L20)
 
 which address corresponding private key to use for signing
 
@@ -26,7 +26,7 @@ which address corresponding private key to use for signing
 
 > `optional` **disableTweakSigner**: `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:28](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L28)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:28](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L28)
 
 default value is false. Setting it true allows the use of the original private key when signing taproot inputs.
 
@@ -36,7 +36,7 @@ default value is false. Setting it true allows the use of the original private k
 
 > **index**: `number`
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:18](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L18)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:18](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L18)
 
 which input to sign
 
@@ -46,7 +46,7 @@ which input to sign
 
 > `optional` **publicKey**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:22](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L22)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:22](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L22)
 
 which publicKey corresponding private key to use for signing
 
@@ -56,7 +56,7 @@ which publicKey corresponding private key to use for signing
 
 > `optional` **sighashTypes**: `number`[]
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:26](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L26)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:26](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L26)
 
 sighashTypes
 
@@ -66,6 +66,6 @@ sighashTypes
 
 > `optional` **tapLeafHashToSign**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/signer.ts:24](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signer.ts#L24)
+Defined in: [packages/scrypt-ts-opcat/src/signer.ts:24](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signer.ts#L24)
 
 tapLeafHashToSign

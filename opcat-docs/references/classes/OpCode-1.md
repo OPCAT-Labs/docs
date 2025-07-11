@@ -6,7 +6,7 @@
 
 # Class: OpCode
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:8](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L8)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:8](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L8)
 
 This is a list of all Script words, also known as opcodes, commands, or functions.
 Opcodes used in [Script][https://en.bitcoin.it/wiki/Script](https://en.bitcoin.it/wiki/Script)
@@ -29,7 +29,7 @@ Opcodes used in [Script][https://en.bitcoin.it/wiki/Script](https://en.bitcoin.i
 
 > `readonly` `static` **OP\_0**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:14](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L14)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:14](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L14)
 
 An empty array of bytes is pushed onto the stack. (This is not a no-op: an item is added to the stack.)
 
@@ -47,7 +47,7 @@ OP_0
 
 > `readonly` `static` **OP\_0NOTEQUAL**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:496](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L496)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:496](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L496)
 
 Returns 0 if the input is 0. 1 otherwise.
 
@@ -65,7 +65,7 @@ OP_0NOTEQUAL
 
 > `readonly` `static` **OP\_1**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:56](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L56)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:56](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L56)
 
 The number 1 is pushed onto the stack.
 
@@ -83,7 +83,7 @@ OP_1
 
 > `readonly` `static` **OP\_10**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:116](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L116)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:116](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L116)
 
 The number 10 is pushed onto the stack.
 
@@ -101,7 +101,7 @@ OP_10
 
 > `readonly` `static` **OP\_11**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:122](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L122)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:122](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L122)
 
 The number 11 is pushed onto the stack.
 
@@ -119,7 +119,7 @@ OP_11
 
 > `readonly` `static` **OP\_12**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:128](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L128)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:128](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L128)
 
 The number 12 is pushed onto the stack.
 
@@ -137,7 +137,7 @@ OP_12
 
 > `readonly` `static` **OP\_13**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:134](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L134)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:134](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L134)
 
 The number 13 is pushed onto the stack.
 
@@ -155,7 +155,7 @@ OP_13
 
 > `readonly` `static` **OP\_14**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:140](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L140)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:140](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L140)
 
 The number 14 is pushed onto the stack.
 
@@ -173,7 +173,7 @@ OP_14
 
 > `readonly` `static` **OP\_15**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:146](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L146)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:146](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L146)
 
 The number 15 is pushed onto the stack.
 
@@ -191,7 +191,7 @@ OP_15
 
 > `readonly` `static` **OP\_16**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:152](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L152)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:152](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L152)
 
 The number 16 is pushed onto the stack.
 
@@ -209,7 +209,7 @@ OP_16
 
 > `readonly` `static` **OP\_1ADD**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:454](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L454)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:454](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L454)
 
 1 is added to the input.
 
@@ -227,7 +227,7 @@ OP_1ADD
 
 > `readonly` `static` **OP\_1NEGATE**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:44](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L44)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:44](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L44)
 
 The number -1 is pushed onto the stack.
 
@@ -245,7 +245,7 @@ OP_1NEGATE
 
 > `readonly` `static` **OP\_1SUB**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:460](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L460)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:460](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L460)
 
 1 is subtracted from the input.
 
@@ -263,7 +263,7 @@ OP_1SUB
 
 > `readonly` `static` **OP\_2**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:68](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L68)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:68](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L68)
 
 The number 2 is pushed onto the stack.
 
@@ -281,7 +281,7 @@ OP_2
 
 > `readonly` `static` **OP\_2DIV**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:472](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L472)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:472](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L472)
 
 The input is divided by 2. **DISABLED** now. (This opcode is scheduled to be re-enabled in the Chronicle update)
 
@@ -299,7 +299,7 @@ OP_2DIV
 
 > `readonly` `static` **OP\_2DROP**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:271](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L271)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:271](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L271)
 
 Removes the top two stack items.
 
@@ -317,7 +317,7 @@ OP_2DROP
 
 > `readonly` `static` **OP\_2DUP**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:277](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L277)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:277](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L277)
 
 Duplicates the top two stack items.
 
@@ -335,7 +335,7 @@ OP_2DUP
 
 > `readonly` `static` **OP\_2MUL**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:466](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L466)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:466](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L466)
 
 The input is multiplied by 2. **DISABLED** now. (This opcode is scheduled to be re-enabled in the Chronicle update)
 
@@ -353,7 +353,7 @@ OP_2MUL
 
 > `readonly` `static` **OP\_2OVER**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:289](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L289)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:289](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L289)
 
 Copies the pair of items two spaces back in the stack to the front.
 
@@ -371,7 +371,7 @@ OP_2OVER
 
 > `readonly` `static` **OP\_2ROT**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:295](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L295)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:295](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L295)
 
 The fifth and sixth items back are moved to the top of the stack.
 
@@ -389,7 +389,7 @@ OP_2ROT
 
 > `readonly` `static` **OP\_2SWAP**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:301](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L301)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:301](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L301)
 
 Swaps the top two pairs of items.
 
@@ -407,7 +407,7 @@ OP_2SWAP
 
 > `readonly` `static` **OP\_3**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:74](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L74)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:74](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L74)
 
 The number 3 is pushed onto the stack.
 
@@ -425,7 +425,7 @@ OP_3
 
 > `readonly` `static` **OP\_3DUP**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:283](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L283)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:283](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L283)
 
 Duplicates the top three stack items.
 
@@ -443,7 +443,7 @@ OP_3DUP
 
 > `readonly` `static` **OP\_4**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:80](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L80)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:80](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L80)
 
 The number 4 is pushed onto the stack.
 
@@ -461,7 +461,7 @@ OP_4
 
 > `readonly` `static` **OP\_5**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:86](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L86)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:86](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L86)
 
 The number 5 is pushed onto the stack.
 
@@ -479,7 +479,7 @@ OP_5
 
 > `readonly` `static` **OP\_6**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:92](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L92)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:92](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L92)
 
 The number 6 is pushed onto the stack.
 
@@ -497,7 +497,7 @@ OP_6
 
 > `readonly` `static` **OP\_7**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:98](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L98)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:98](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L98)
 
 The number 7 is pushed onto the stack.
 
@@ -515,7 +515,7 @@ OP_7
 
 > `readonly` `static` **OP\_8**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:104](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L104)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:104](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L104)
 
 The number 8 is pushed onto the stack.
 
@@ -533,7 +533,7 @@ OP_8
 
 > `readonly` `static` **OP\_9**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:110](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L110)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:110](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L110)
 
 The number 9 is pushed onto the stack.
 
@@ -551,7 +551,7 @@ OP_9
 
 > `readonly` `static` **OP\_ABS**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:484](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L484)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:484](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L484)
 
 The input is made positive.
 
@@ -569,7 +569,7 @@ OP_ABS
 
 > `readonly` `static` **OP\_ADD**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:502](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L502)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:502](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L502)
 
 a is added to b.
 
@@ -587,7 +587,7 @@ OP_ADD
 
 > `readonly` `static` **OP\_AND**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:411](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L411)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:411](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L411)
 
 Boolean and between each bit in the inputs.
 
@@ -605,7 +605,7 @@ OP_AND
 
 > `readonly` `static` **OP\_BIN2NUM**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:392](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L392)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:392](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L392)
 
 Converts byte sequence x into a numeric value.
 
@@ -623,7 +623,7 @@ OP_BIN2NUM
 
 > `readonly` `static` **OP\_BOOLAND**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:544](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L544)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:544](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L544)
 
 If both a and b are not 0, the output is 1. Otherwise 0.
 
@@ -641,7 +641,7 @@ OP_BOOLAND
 
 > `readonly` `static` **OP\_BOOLOR**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:550](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L550)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:550](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L550)
 
 If a or b is not 0, the output is 1. Otherwise 0.
 
@@ -659,7 +659,7 @@ OP_BOOLOR
 
 > `readonly` `static` **OP\_CAT**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:374](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L374)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:374](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L374)
 
 Concatenates two strings.
 
@@ -677,7 +677,7 @@ OP_CAT
 
 > `readonly` `static` **OP\_CHECKMULTISIG**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:667](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L667)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:667](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L667)
 
 Compares the first signature against each public key until it finds an ECDSA match. Starting with the subsequent public key, it compares the second signature against each remaining public key until it finds an ECDSA match. The process is repeated until all signatures have been checked or not enough public keys remain to produce a successful result. All signatures need to match a public key. Because public keys are not checked again if they fail any signature comparison, signatures must be placed in the scriptSig using the same order as their corresponding public keys were placed in the scriptPubKey or redeemScript. If all signatures are valid, 1 is returned, 0 otherwise. Due to a bug, an extra unused value (x) is removed from the stack. Script spenders must account for this by adding a junk value (typically zero) to the stack.
 
@@ -695,7 +695,7 @@ OP_CHECKMULTISIG
 
 > `readonly` `static` **OP\_CHECKMULTISIGVERIFY**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:673](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L673)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:673](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L673)
 
 Same as `OP_CHECKMULTISIG`, but `OP_VERIFY` is executed afterward.
 
@@ -713,7 +713,7 @@ OP_CHECKMULTISIGVERIFY
 
 > `readonly` `static` **OP\_CHECKSIG**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:655](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L655)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:655](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L655)
 
 The entire transaction's outputs, inputs, and script (from the most recently-executed [OP_CODESEPARATOR][https://en.bitcoin.it/wiki/Script#:~:text=with%20SHA%2D256.-,OP\_CODESEPARATOR,-171](https://en.bitcoin.it/wiki/Script#:~:text=with%20SHA%2D256.-,OP_CODESEPARATOR,-171) to the end) are hashed.
 The signature used by [OP_CHECKSIG][https://en.bitcoin.it/wiki/OP\_CHECKSIG](https://en.bitcoin.it/wiki/OP_CHECKSIG) must be a valid signature for this hash and public key. If it is, 1 is returned, 0 otherwise.
@@ -732,7 +732,7 @@ OP_CHECKSIG
 
 > `readonly` `static` **OP\_CHECKSIGVERIFY**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:661](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L661)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:661](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L661)
 
 Same as `OP_CHECKSIG`, but `OP_VERIFY` is executed afterward.
 
@@ -750,7 +750,7 @@ OP_CHECKSIGVERIFY
 
 > `readonly` `static` **OP\_CODESEPARATOR**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:648](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L648)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:648](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L648)
 
 All of the signature checking words will only match signatures to the data after the most recently-executed
 [OP_CODESEPARATOR][https://en.bitcoin.it/wiki/Script#:~:text=with%20SHA%2D256.-,OP\_CODESEPARATOR,-171](https://en.bitcoin.it/wiki/Script#:~:text=with%20SHA%2D256.-,OP_CODESEPARATOR,-171).
@@ -769,7 +769,7 @@ OP_CODESEPARATOR
 
 > `readonly` `static` **OP\_DEPTH**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:313](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L313)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:313](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L313)
 
 Counts the number of stack items onto the stack and places the value on the top
 
@@ -787,7 +787,7 @@ OP_DEPTH
 
 > `readonly` `static` **OP\_DIV**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:520](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L520)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:520](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L520)
 
 a is divided by b.
 
@@ -805,7 +805,7 @@ OP_DIV
 
 > `readonly` `static` **OP\_DROP**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:319](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L319)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:319](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L319)
 
 Removes the top stack item.
 
@@ -823,7 +823,7 @@ OP_DROP
 
 > `readonly` `static` **OP\_DUP**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:325](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L325)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:325](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L325)
 
 Duplicates the top stack item.
 
@@ -841,7 +841,7 @@ OP_DUP
 
 > `readonly` `static` **OP\_ELSE**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:227](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L227)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:227](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L227)
 
 If the preceding IF or NOTIF check was not valid then statement 2 is executed.
 
@@ -869,7 +869,7 @@ ENDIF`
 
 > `readonly` `static` **OP\_ENDIF**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:240](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L240)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:240](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L240)
 
 Ends an if/else block. All blocks must end, or the transaction is invalid.
 An OP_ENDIF without a prior matching OP_IF or OP_NOTIF is also invalid.
@@ -898,7 +898,7 @@ ENDIF`
 
 > `readonly` `static` **OP\_EQUAL**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:429](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L429)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:429](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L429)
 
 Returns 1 if the inputs are exactly equal, 0 otherwise.
 
@@ -916,7 +916,7 @@ OP_EQUAL
 
 > `readonly` `static` **OP\_EQUALVERIFY**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:435](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L435)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:435](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L435)
 
 Same as `OP_EQUAL`, but runs `OP_VERIFY` afterward.
 
@@ -934,7 +934,7 @@ OP_EQUALVERIFY
 
 > `readonly` `static` **OP\_FALSE**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:20](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L20)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:20](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L20)
 
 An empty array of bytes is pushed onto the stack. (This is not a no-op: an item is added to the stack.)
 
@@ -952,7 +952,7 @@ OP_FALSE
 
 > `readonly` `static` **OP\_FROMALTSTACK**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:265](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L265)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:265](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L265)
 
 Puts the input onto the top of the main stack. Removes it from the alt stack.
 
@@ -970,7 +970,7 @@ OP_FROMALTSTACK
 
 > `readonly` `static` **OP\_GREATERTHAN**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:580](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L580)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:580](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L580)
 
 Returns 1 if a is greater than b, 0 otherwise.
 
@@ -988,7 +988,7 @@ OP_GREATERTHAN
 
 > `readonly` `static` **OP\_GREATERTHANOREQUAL**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:592](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L592)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:592](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L592)
 
 Returns 1 if a is greater than or equal to b, 0 otherwise.
 
@@ -1006,7 +1006,7 @@ OP_GREATERTHANOREQUAL
 
 > `readonly` `static` **OP\_HASH160**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:635](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L635)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:635](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L635)
 
 The input is hashed twice: first with SHA-256 and then with RIPEMD-160.
 
@@ -1024,7 +1024,7 @@ OP_HASH160
 
 > `readonly` `static` **OP\_HASH256**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:641](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L641)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:641](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L641)
 
 The input is hashed two times with SHA-256.
 
@@ -1042,7 +1042,7 @@ OP_HASH256
 
 > `readonly` `static` **OP\_IF**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:184](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L184)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:184](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L184)
 
 If the top stack value is TRUE, statement 1 is executed.
 If the top stack value is FALSE and ELSE is used, statement 2 is executed.
@@ -1076,7 +1076,7 @@ ENDIF`
 
 > `readonly` `static` **OP\_IFDUP**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:307](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L307)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:307](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L307)
 
 If the top stack value is not 0, duplicate it.
 
@@ -1094,7 +1094,7 @@ OP_IFDUP
 
 > `readonly` `static` **OP\_INVALIDOPCODE**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:757](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L757)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:757](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L757)
 
 Matches any opcode that is not yet assigned. The word is used internally for assisting with transaction matching. They are invalid if used in actual scripts.
 
@@ -1112,7 +1112,7 @@ OP_PUBKEY
 
 > `readonly` `static` **OP\_INVERT**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:405](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L405)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:405](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L405)
 
 Flips all of the bits in the input.
 
@@ -1130,7 +1130,7 @@ OP_INVERT
 
 > `readonly` `static` **OP\_LESSTHAN**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:574](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L574)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:574](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L574)
 
 Returns 1 if a is less than b, 0 otherwise.
 
@@ -1148,7 +1148,7 @@ OP_LESSTHAN
 
 > `readonly` `static` **OP\_LESSTHANOREQUAL**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:586](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L586)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:586](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L586)
 
 Returns 1 if a is less than or equal to b, 0 otherwise.
 
@@ -1166,7 +1166,7 @@ OP_LESSTHANOREQUAL
 
 > `readonly` `static` **OP\_LSHIFT**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:532](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L532)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:532](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L532)
 
 Logical left shift b bits. Sign data is discarded
 
@@ -1184,7 +1184,7 @@ OP_LSHIFT
 
 > `readonly` `static` **OP\_MAX**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:604](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L604)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:604](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L604)
 
 Returns the larger of a and b.
 
@@ -1202,7 +1202,7 @@ OP_MAX
 
 > `readonly` `static` **OP\_MIN**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:598](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L598)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:598](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L598)
 
 Returns the smaller of a and b.
 
@@ -1220,7 +1220,7 @@ OP_MIN
 
 > `readonly` `static` **OP\_MOD**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:526](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L526)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:526](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L526)
 
 Returns the remainder after dividing a by b.
 
@@ -1238,7 +1238,7 @@ OP_MOD
 
 > `readonly` `static` **OP\_MUL**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:514](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L514)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:514](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L514)
 
 a is multiplied by b.
 
@@ -1256,7 +1256,7 @@ OP_MUL
 
 > `readonly` `static` **OP\_NEGATE**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:478](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L478)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:478](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L478)
 
 The sign of the input is flipped.
 
@@ -1274,7 +1274,7 @@ OP_NEGATE
 
 > `readonly` `static` **OP\_NIP**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:331](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L331)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:331](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L331)
 
 Removes the second-to-top stack item.
 
@@ -1292,7 +1292,7 @@ OP_NIP
 
 > `readonly` `static` **OP\_NOP**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:159](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L159)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:159](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L159)
 
 Does nothing.
 
@@ -1310,7 +1310,7 @@ OP_NOP
 
 > `readonly` `static` **OP\_NOP1**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:680](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L680)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:680](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L680)
 
 No operation. The word is ignored.
 
@@ -1328,7 +1328,7 @@ OP_NOP1
 
 > `readonly` `static` **OP\_NOP10**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:734](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L734)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:734](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L734)
 
 No operation. The word is ignored.
 
@@ -1346,7 +1346,7 @@ OP_NOP10
 
 > `readonly` `static` **OP\_NOP2**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:686](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L686)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:686](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L686)
 
 No operation. The word is ignored. (previously OP_CHECKLOCKTIMEVERIFY)
 
@@ -1364,7 +1364,7 @@ OP_NOP2
 
 > `readonly` `static` **OP\_NOP3**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:692](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L692)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:692](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L692)
 
 No operation. The word is ignored. (previously OP_CHECKSEQUENCEVERIFY)
 
@@ -1382,7 +1382,7 @@ OP_NOP3
 
 > `readonly` `static` **OP\_NOP4**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:698](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L698)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:698](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L698)
 
 No operation. The word is ignored.
 
@@ -1400,7 +1400,7 @@ OP_NOP4
 
 > `readonly` `static` **OP\_NOP5**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:704](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L704)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:704](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L704)
 
 No operation. The word is ignored.
 
@@ -1418,7 +1418,7 @@ OP_NOP5
 
 > `readonly` `static` **OP\_NOP6**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:710](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L710)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:710](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L710)
 
 No operation. The word is ignored.
 
@@ -1436,7 +1436,7 @@ OP_NOP6
 
 > `readonly` `static` **OP\_NOP7**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:716](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L716)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:716](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L716)
 
 No operation. The word is ignored.
 
@@ -1454,7 +1454,7 @@ OP_NOP7
 
 > `readonly` `static` **OP\_NOP8**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:722](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L722)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:722](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L722)
 
 No operation. The word is ignored.
 
@@ -1472,7 +1472,7 @@ OP_NOP8
 
 > `readonly` `static` **OP\_NOP9**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:728](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L728)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:728](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L728)
 
 No operation. The word is ignored.
 
@@ -1490,7 +1490,7 @@ OP_NOP9
 
 > `readonly` `static` **OP\_NOT**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:490](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L490)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:490](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L490)
 
 If the input is 0 or 1, it is flipped. Otherwise the output will be 0.
 
@@ -1508,7 +1508,7 @@ OP_NOT
 
 > `readonly` `static` **OP\_NOTIF**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:203](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L203)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:203](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L203)
 
 If the top stack value is FALSE, statement 1 is executed.
 If the top stack value is TRUE and ELSE is used, statement 2 is executed. If ELSE is NOT used, the script jumps to ENDIF.
@@ -1544,7 +1544,7 @@ ENDIF`
 
 > `readonly` `static` **OP\_NUM2BIN**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:386](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L386)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:386](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L386)
 
 Converts numeric value a into byte sequence of length b.
 
@@ -1562,7 +1562,7 @@ OP_NUM2BIN
 
 > `readonly` `static` **OP\_NUMEQUAL**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:556](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L556)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:556](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L556)
 
 Returns 1 if the numbers are equal, 0 otherwise.
 
@@ -1580,7 +1580,7 @@ OP_NUMEQUAL
 
 > `readonly` `static` **OP\_NUMEQUALVERIFY**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:562](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L562)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:562](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L562)
 
 Same as `OP_NUMEQUAL`, but runs `OP_VERIFY` afterward.
 
@@ -1598,7 +1598,7 @@ OP_NUMEQUALVERIFY
 
 > `readonly` `static` **OP\_NUMNOTEQUAL**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:568](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L568)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:568](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L568)
 
 Returns 1 if the numbers are not equal, 0 otherwise.
 
@@ -1616,7 +1616,7 @@ OP_NUMNOTEQUAL
 
 > `readonly` `static` **OP\_OR**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:417](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L417)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:417](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L417)
 
 Boolean or between each bit in the inputs.
 
@@ -1634,7 +1634,7 @@ OP_OR
 
 > `readonly` `static` **OP\_OVER**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:337](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L337)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:337](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L337)
 
 Copies the second-to-top stack item to the top.
 
@@ -1652,7 +1652,7 @@ OP_OVER
 
 > `readonly` `static` **OP\_PICK**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:343](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L343)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:343](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L343)
 
 The item `n` back in the stack is copied to the top.
 
@@ -1670,7 +1670,7 @@ OP_PICK
 
 > `readonly` `static` **OP\_PUBKEY**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:751](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L751)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:751](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L751)
 
 Represents a public key compatible with OP_CHECKSIG. The word is used internally for assisting with transaction matching. They are invalid if used in actual scripts.
 
@@ -1688,7 +1688,7 @@ OP_PUBKEY
 
 > `readonly` `static` **OP\_PUBKEYHASH**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:745](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L745)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:745](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L745)
 
 Represents a public key hashed with OP_HASH160. The word is used internally for assisting with transaction matching. They are invalid if used in actual scripts.
 
@@ -1706,7 +1706,7 @@ OP_PUBKEYHASH
 
 > `readonly` `static` **OP\_PUSHDATA1**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:26](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L26)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:26](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L26)
 
 The next byte contains the number of bytes to be pushed onto the stack.
 
@@ -1724,7 +1724,7 @@ OP_PUSHDATA1
 
 > `readonly` `static` **OP\_PUSHDATA2**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L32)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L32)
 
 The next two bytes contain the number of bytes to be pushed onto the stack in little endian order.
 
@@ -1742,7 +1742,7 @@ OP_PUSHDATA2
 
 > `readonly` `static` **OP\_PUSHDATA4**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:38](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L38)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:38](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L38)
 
 The next four bytes contain the number of bytes to be pushed onto the stack in little endian order.
 
@@ -1760,7 +1760,7 @@ OP_PUSHDATA4
 
 > `readonly` `static` **OP\_RESERVED**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:50](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L50)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:50](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L50)
 
 Transaction is invalid unless occuring in an unexecuted OP_IF branch
 
@@ -1778,7 +1778,7 @@ OP_RESERVED
 
 > `readonly` `static` **OP\_RESERVED1**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:441](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L441)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:441](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L441)
 
 Any opcode not assigned is also reserved. Using an unassigned opcode makes the transaction invalid.
 
@@ -1796,7 +1796,7 @@ OP_RESERVED1
 
 > `readonly` `static` **OP\_RESERVED2**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:447](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L447)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:447](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L447)
 
 Any opcode not assigned is also reserved. Using an unassigned opcode makes the transaction invalid.
 
@@ -1814,7 +1814,7 @@ OP_RESERVED2
 
 > `readonly` `static` **OP\_RETURN**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:252](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L252)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:252](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L252)
 
 OP_RETURN can also be used to create "False Return" outputs with a scriptPubKey consisting of `OP_FALSE` `OP_RETURN` followed by data. Such outputs are provably unspendable and should be given a value of zero Satoshis. These outputs can be pruned from storage in the UTXO set, reducing its size. Currently the BitcoinSV network supports multiple FALSE RETURN outputs in a given transaction with each one capable of holding up to 100kB of data. After the Genesis upgrade in 2020 miners will be free to mine transactions containing FALSE RETURN outputs of any size.
 
@@ -1832,7 +1832,7 @@ OP_RETURN
 
 > `readonly` `static` **OP\_RIPEMD160**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:617](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L617)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:617](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L617)
 
 The input is hashed using RIPEMD-160.
 
@@ -1850,7 +1850,7 @@ OP_RIPEMD160
 
 > `readonly` `static` **OP\_ROLL**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:349](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L349)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:349](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L349)
 
 The item `n` back in the stack is moved to the top.
 
@@ -1868,7 +1868,7 @@ OP_ROLL
 
 > `readonly` `static` **OP\_ROT**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:355](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L355)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:355](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L355)
 
 The top three items on the stack are rotated to the left.
 
@@ -1886,7 +1886,7 @@ OP_ROT
 
 > `readonly` `static` **OP\_RSHIFT**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:538](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L538)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:538](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L538)
 
 Logical right shift b bits. Sign data is discarded
 
@@ -1904,7 +1904,7 @@ OP_RSHIFT
 
 > `readonly` `static` **OP\_SHA1**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:623](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L623)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:623](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L623)
 
 The input is hashed using SHA-1.
 
@@ -1922,7 +1922,7 @@ OP_SHA1
 
 > `readonly` `static` **OP\_SHA256**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:629](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L629)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:629](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L629)
 
 The input is hashed using SHA-256.
 
@@ -1940,7 +1940,7 @@ OP_SHA256
 
 > `readonly` `static` **OP\_SIZE**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:398](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L398)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:398](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L398)
 
 Pushes the string length of the top element of the stack (without popping it).
 
@@ -1958,7 +1958,7 @@ OP_SIZE
 
 > `readonly` `static` **OP\_SPLIT**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:380](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L380)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:380](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L380)
 
 Splits byte sequence x at position n.
 
@@ -1976,7 +1976,7 @@ OP_SPLIT
 
 > `readonly` `static` **OP\_SUB**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:508](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L508)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:508](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L508)
 
 b is subtracted from a.
 
@@ -1994,7 +1994,7 @@ OP_SUB
 
 > `readonly` `static` **OP\_SWAP**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:361](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L361)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:361](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L361)
 
 The top two items on the stack are swapped.
 
@@ -2012,7 +2012,7 @@ OP_SWAP
 
 > `readonly` `static` **OP\_TOALTSTACK**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:259](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L259)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:259](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L259)
 
 Puts the input onto the top of the alt stack. Removes it from the main stack.
 
@@ -2030,7 +2030,7 @@ OP_TOALTSTACK
 
 > `readonly` `static` **OP\_TRUE**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:62](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L62)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:62](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L62)
 
 The number 1 is pushed onto the stack.
 
@@ -2048,7 +2048,7 @@ OP_TRUE
 
 > `readonly` `static` **OP\_TUCK**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:367](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L367)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:367](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L367)
 
 The item at the top of the stack is copied and inserted before the second-to-top item.
 
@@ -2066,7 +2066,7 @@ OP_TUCK
 
 > `readonly` `static` **OP\_VER**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:166](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L166)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:166](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L166)
 
 Puts the version of the protocol under which this transaction will be evaluated onto the stack.
 
@@ -2088,7 +2088,7 @@ OP_VER
 
 > `readonly` `static` **OP\_VERIF**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:209](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L209)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:209](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L209)
 
 #### Name
 
@@ -2108,7 +2108,7 @@ DISABLED
 
 > `readonly` `static` **OP\_VERIFY**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:246](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L246)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:246](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L246)
 
 Marks transaction as invalid if top stack value is not true. The top stack value is removed.
 
@@ -2126,7 +2126,7 @@ OP_VERIFY
 
 > `readonly` `static` **OP\_VERNOTIF**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:215](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L215)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:215](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L215)
 
 #### Name
 
@@ -2146,7 +2146,7 @@ DISABLED
 
 > `readonly` `static` **OP\_WITHIN**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:610](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L610)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:610](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L610)
 
 Returns 1 if x is within the specified range (left-inclusive), 0 otherwise.
 
@@ -2164,7 +2164,7 @@ OP_WITHIN
 
 > `readonly` `static` **OP\_XOR**: [`OpCodeType`](../type-aliases/OpCodeType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:423](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L423)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts:423](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/opCode.ts#L423)
 
 Boolean exclusive or between each bit in the inputs.
 

@@ -6,7 +6,7 @@
 
 # Interface: UtxoProvider
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/utxoProvider.ts:23](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/utxoProvider.ts#L23)
+Defined in: [packages/scrypt-ts-opcat/src/providers/utxoProvider.ts:23](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/utxoProvider.ts#L23)
 
 a Provider used to query UTXO related to the address
 
@@ -16,7 +16,7 @@ a Provider used to query UTXO related to the address
 
 > **addNewUTXO**(`utxo`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/utxoProvider.ts:42](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/utxoProvider.ts#L42)
+Defined in: [packages/scrypt-ts-opcat/src/providers/utxoProvider.ts:42](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/utxoProvider.ts#L42)
 
 Add a UTXO to the provider
 
@@ -36,7 +36,7 @@ Add a UTXO to the provider
 
 > **getUtxos**(`address`, `options`?): `Promise`\<[`ExtUtxo`](../type-aliases/ExtUtxo.md)[]\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/utxoProvider.ts:30](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/utxoProvider.ts#L30)
+Defined in: [packages/scrypt-ts-opcat/src/providers/utxoProvider.ts:30](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/utxoProvider.ts#L30)
 
 Get a list of the UTXOs.
 
@@ -66,7 +66,7 @@ A promise which resolves to a list of UTXO for the query options.
 
 > **markSpent**(`txId`, `vout`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/utxoProvider.ts:36](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/utxoProvider.ts#L36)
+Defined in: [packages/scrypt-ts-opcat/src/providers/utxoProvider.ts:36](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/utxoProvider.ts#L36)
 
 Mark an outpoint as spent
 

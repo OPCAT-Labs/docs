@@ -6,7 +6,7 @@
 
 # Class: SmartContractLib
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:15](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L15)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:15](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L15)
 
 The contract library class. To write a contract library, extend this class as such:
 
@@ -34,7 +34,7 @@ class YourSmartContractLib extends SmartContractLib {
 
 > **new SmartContractLib**(...`args`): [`SmartContractLib`](SmartContractLib.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L32)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L32)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32]
 
 > **args**: `any`[] = `[]`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L31)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L31)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31]
 
 > `static` **artifact**: [`Artifact`](../interfaces/Artifact.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L16)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L16)
 
 ***
 
@@ -68,7 +68,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16]
 
 > `static` `optional` **stateType**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L17)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L17)
 
 ## Methods
 
@@ -76,7 +76,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17]
 
 > `static` **loadArtifact**(`artifact`): *typeof* [`SmartContractLib`](SmartContractLib.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L19)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L19)
 
 #### Parameters
 

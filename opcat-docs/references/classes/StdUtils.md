@@ -6,7 +6,7 @@
 
 # Class: StdUtils
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:28](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L28)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:28](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L28)
 
 A utility class providing standard helper methods for working with ByteStrings and numeric conversions.
 Includes methods for:
@@ -27,7 +27,7 @@ All methods are static and annotated with @method() decorator.
 
 > **new StdUtils**(...`args`): [`StdUtils`](StdUtils.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L32)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L32)
 
 #### Parameters
 
@@ -49,7 +49,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32]
 
 > **args**: `any`[] = `[]`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L31)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L31)
 
 #### Inherited from
 
@@ -61,7 +61,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31]
 
 > `static` **artifact**: [`Artifact`](../interfaces/Artifact.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L16)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L16)
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16]
 
 > `static` `optional` **stateType**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L17)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L17)
 
 #### Inherited from
 
@@ -85,7 +85,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17]
 
 > `static` **byteStringToUInt32**(`b`): `UInt32`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:75](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L75)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:75](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L75)
 
 Converts a 4-byte ByteString to an unsigned 32-bit integer in little-endian format.
 
@@ -113,7 +113,7 @@ Will throw an error if the input ByteString length is not 4 bytes
 
 > `static` **checkLenDivisibleBy**(`b`, `n`): `bigint`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:37](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L37)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:37](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L37)
 
 Checks if the length of a ByteString is divisible by a given number and returns the quotient.
 
@@ -147,7 +147,7 @@ If the length is not divisible by n
 
 > `static` **fromLEUnsigned**(`b`): `bigint`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:99](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L99)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:99](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L99)
 
 convert `ByteString` to unsigned integer, in sign-magnitude little endian
 
@@ -169,7 +169,7 @@ returns a number
 
 > `static` **loadArtifact**(`artifact`): *typeof* [`SmartContractLib`](SmartContractLib.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L19)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L19)
 
 #### Parameters
 
@@ -191,7 +191,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19]
 
 > `static` **pushData**(`buf`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:149](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L149)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:149](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L149)
 
 Pushes data to a buffer with appropriate size header.
 
@@ -226,7 +226,7 @@ Will assert if input size exceeds 32-bit limit (4294967295 bytes)
 
 > `static` **readVarint**(`buf`, `pos`): `ReadVarintResult`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:184](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L184)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:184](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L184)
 
 read [VarInt (variable integer)][https://learnmeabitcoin.com/technical/general/compact-size/](https://learnmeabitcoin.com/technical/general/compact-size/)-encoded data from the beginning of 'buf'
 
@@ -254,7 +254,7 @@ return data
 
 > `static` **toLEUnsigned**(`n`, `l`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:87](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L87)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:87](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L87)
 
 convert signed integer `n` to unsigned integer of `l` string, in little endian
 
@@ -284,7 +284,7 @@ returns a `ByteString`
 
 > `static` **uint32ToByteString**(`n`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:63](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L63)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:63](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L63)
 
 Converts a UInt32 number to a 4-byte little-endian ByteString.
 
@@ -312,7 +312,7 @@ If the input number is outside the UInt32 range (0 to 4294967295)
 
 > `static` **uint64ToByteString**(`n`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:51](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L51)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:51](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L51)
 
 Converts a UInt64 value to a little-endian ByteString.
 
@@ -340,7 +340,7 @@ If the input value is outside UInt64 range (0 to 2^64-1)
 
 > `static` **writeVarInt**(`n`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:114](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L114)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts:114](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stdUtils.ts#L114)
 
 Encodes a bigint into a variable-length integer (VarInt) format as ByteString.
 The encoding follows the standard VarInt scheme:

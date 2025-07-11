@@ -6,7 +6,7 @@
 
 # Interface: IExtPsbt
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:69](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/types.ts#L69)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:69](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/types.ts#L69)
 
 Extended PSBT (Partially Signed Bitcoin Transaction) interface with additional contract-related functionality.
 
@@ -28,7 +28,7 @@ It provides a higher-level abstraction for working with smart contracts in Bitco
 
 > `readonly` **data**: `Psbt`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:134](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L134)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:134](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L134)
 
 #### Inherited from
 
@@ -40,7 +40,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:134](https://github.com/O
 
 > **isFinalized**: `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:137](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L137)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:137](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L137)
 
 Whether the PSBT is finalized.
 
@@ -54,7 +54,7 @@ Whether the PSBT is finalized.
 
 > **isFinalizing**: `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:132](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L132)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:132](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L132)
 
 Whether the PSBT starts finalizing.
 
@@ -68,7 +68,7 @@ Whether the PSBT starts finalizing.
 
 > **unsignedTx**: [`Transaction`](../classes/Transaction.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:108](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/types.ts#L108)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:108](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/types.ts#L108)
 
 The unsigned transaction when the PSBT is not finalized.
 note:
@@ -81,7 +81,7 @@ note:
 
 > **get** **inputCount**(): `number`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:180](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L180)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:180](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L180)
 
 ##### Returns
 
@@ -99,7 +99,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:180](https://github.com/O
 
 > **get** **locktime**(): `number`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:192](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L192)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:192](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L192)
 
 ##### Returns
 
@@ -109,7 +109,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:192](https://github.com/O
 
 > **set** **locktime**(`locktime`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:196](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L196)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:196](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L196)
 
 ##### Parameters
 
@@ -133,7 +133,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:196](https://github.com/O
 
 > **get** **txInputs**(): `PsbtTxInput`[]
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:200](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L200)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:200](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L200)
 
 ##### Returns
 
@@ -151,7 +151,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:200](https://github.com/O
 
 > **get** **txOutputs**(): `PsbtTxOutput`[]
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:208](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L208)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:208](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L208)
 
 ##### Returns
 
@@ -169,7 +169,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:208](https://github.com/O
 
 > **get** **version**(): `number`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:184](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L184)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:184](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L184)
 
 ##### Returns
 
@@ -179,7 +179,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:184](https://github.com/O
 
 > **set** **version**(`version`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:188](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L188)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:188](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L188)
 
 ##### Parameters
 
@@ -201,7 +201,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:188](https://github.com/O
 
 > **addContractInput**\<`Contract`\>(`contract`, `contractCall`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:75](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/types.ts#L75)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:75](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/types.ts#L75)
 
 Add an input to spend the contract.
 
@@ -233,7 +233,7 @@ the contract call function, such as `(contract: Counter) => { contract.increase(
 
 > **addContractOutput**(`contract`, `satoshis`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:82](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/types.ts#L82)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:82](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/types.ts#L82)
 
 Add an output to create new contract.
 
@@ -261,7 +261,7 @@ the output includes the amount of satoshis.
 
 > **addInput**(`inputData`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:276](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L276)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:276](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L276)
 
 #### Parameters
 
@@ -283,7 +283,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:276](https://github.com/O
 
 > **addInputs**(`inputDatas`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:271](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L271)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:271](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L271)
 
 #### Parameters
 
@@ -305,7 +305,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:271](https://github.com/O
 
 > **addOutput**(`outputData`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:306](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L306)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:306](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L306)
 
 #### Parameters
 
@@ -327,7 +327,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:306](https://github.com/O
 
 > **addOutputs**(`outputDatas`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:301](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L301)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:301](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L301)
 
 #### Parameters
 
@@ -349,7 +349,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:301](https://github.com/O
 
 > **addUnknownKeyValToGlobal**(`keyVal`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:753](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L753)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:753](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L753)
 
 #### Parameters
 
@@ -371,7 +371,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:753](https://github.com/O
 
 > **addUnknownKeyValToInput**(`inputIndex`, `keyVal`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:758](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L758)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:758](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L758)
 
 #### Parameters
 
@@ -397,7 +397,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:758](https://github.com/O
 
 > **addUnknownKeyValToOutput**(`outputIndex`, `keyVal`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:763](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L763)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:763](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L763)
 
 #### Parameters
 
@@ -423,7 +423,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:763](https://github.com/O
 
 > **change**(`address`, `feeRate`, `data`?): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:90](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/types.ts#L90)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:90](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/types.ts#L90)
 
 Add a change output to the transaction if neccesarry.
 
@@ -457,7 +457,7 @@ optional data to be included in the change output
 
 > **clearFinalizedInput**(`inputIndex`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:768](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L768)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:768](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L768)
 
 #### Parameters
 
@@ -479,7 +479,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:768](https://github.com/O
 
 > **clone**(): `Psbt`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:229](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L229)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:229](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L229)
 
 #### Returns
 
@@ -495,7 +495,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:229](https://github.com/O
 
 > **combine**(...`those`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:224](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L224)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:224](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L224)
 
 #### Parameters
 
@@ -517,7 +517,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:224](https://github.com/O
 
 > **estimateFee**(`feeRate`): `number`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:102](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/types.ts#L102)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:102](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/types.ts#L102)
 
 Estimate the fee of the transaction.
 
@@ -541,7 +541,7 @@ the estimated fee in satoshis
 
 > **estimateSize**(): `number`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:95](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/types.ts#L95)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:95](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/types.ts#L95)
 
 Estimate the size of the transaction.
 
@@ -555,7 +555,7 @@ Estimate the size of the transaction.
 
 > **extractTransaction**(`disableFeeCheck`?): [`Transaction`](../classes/Transaction.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:337](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L337)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:337](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L337)
 
 #### Parameters
 
@@ -577,7 +577,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:337](https://github.com/O
 
 > **finalizeAllInputs**(): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:367](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L367)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:367](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L367)
 
 #### Returns
 
@@ -593,7 +593,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:367](https://github.com/O
 
 > **finalizeInput**(`inputIndex`, `finalScriptsFunc`?): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:373](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L373)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:373](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L373)
 
 #### Parameters
 
@@ -619,7 +619,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:373](https://github.com/O
 
 > **getB2GInputUtxo**(`inputIndex`): [`B2GUTXO`](../type-aliases/B2GUTXO.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:150](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L150)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:150](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L150)
 
 Get the b2g contract utxo of the current input
 
@@ -647,7 +647,7 @@ the stateful contract utxo of the current input
 
 > **getChangeInfo**(): [`TxOut`](../type-aliases/TxOut.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:127](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L127)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:127](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L127)
 
 Get the change output information.
 
@@ -665,7 +665,7 @@ Get the change output information.
 
 > **getFee**(): `bigint`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:358](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L358)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:358](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L358)
 
 #### Returns
 
@@ -681,7 +681,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:358](https://github.com/O
 
 > **getFeeRate**(): `number`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:349](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L349)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:349](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L349)
 
 #### Returns
 
@@ -697,7 +697,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:349](https://github.com/O
 
 > **getInputCtx**(`inputIndex`): `InputContext`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:93](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L93)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:93](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L93)
 
 Get the context of the current PSBT input in which this contract is called or spent.
 
@@ -725,7 +725,7 @@ the context of the current PSBT input
 
 > **getInputType**(`inputIndex`): `AllScriptType`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:412](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L412)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:412](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L412)
 
 #### Parameters
 
@@ -747,7 +747,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:412](https://github.com/O
 
 > **getlockTime**(): `number`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:99](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L99)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:99](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L99)
 
 Get the lockTime of the current PSBT.
 
@@ -767,7 +767,7 @@ lockTime of the current PSBT input
 
 > **getSequence**(`inputIndex`): `number`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:106](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L106)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:106](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L106)
 
 Get the sequence of the input by inputIndex.
 
@@ -795,7 +795,7 @@ the sequence of the PSBT input
 
 > **getSig**(`inputIndex`, `options`): [`Sig`](../type-aliases/Sig.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:116](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/types.ts#L116)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:116](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/types.ts#L116)
 
 Get signature from signed psbt by inputIndex
 
@@ -825,7 +825,7 @@ the signature, if no signature found, return a dummy signature.
 
 > **getSigHashType**(`inputIndex`): [`SigHashType`](../enumerations/SigHashType.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:122](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L122)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:122](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L122)
 
 Get the sighash type for the current input.
 
@@ -853,7 +853,7 @@ the sighash type for the current input
 
 > **getSpentDataHashes**(): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:143](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L143)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:143](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L143)
 
 Get the output state hashes of the current transaction
 
@@ -873,7 +873,7 @@ the output state hashes of the current transaction
 
 > **inputHasHDKey**(`inputIndex`, `root`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:428](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L428)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:428](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L428)
 
 #### Parameters
 
@@ -899,7 +899,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:428](https://github.com/O
 
 > **inputHasPubkey**(`inputIndex`, `pubkey`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:423](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L423)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:423](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L423)
 
 #### Parameters
 
@@ -925,7 +925,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:423](https://github.com/O
 
 > **outputHasHDKey**(`outputIndex`, `root`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:440](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L440)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:440](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L440)
 
 #### Parameters
 
@@ -951,7 +951,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:440](https://github.com/O
 
 > **outputHasPubkey**(`outputIndex`, `pubkey`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:436](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L436)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:436](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L436)
 
 #### Parameters
 
@@ -977,7 +977,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:436](https://github.com/O
 
 > **setInputSequence**(`inputIndex`, `sequence`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:259](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L259)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:259](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L259)
 
 #### Parameters
 
@@ -1003,7 +1003,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:259](https://github.com/O
 
 > **setLocktime**(`locktime`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:250](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L250)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:250](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L250)
 
 #### Parameters
 
@@ -1025,7 +1025,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:250](https://github.com/O
 
 > **setMaximumFeeRate**(`satoshiPerByte`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:236](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L236)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:236](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L236)
 
 #### Parameters
 
@@ -1047,7 +1047,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:236](https://github.com/O
 
 > **setSighashType**(`inputIndex`, `sigHashType`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:115](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L115)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/context.ts:115](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/context.ts#L115)
 
 Set the sighash type for the current input.
 used for `@method` decorator to set the sighash type for the current input.
@@ -1081,7 +1081,7 @@ the sighash type to set
 
 > **setVersion**(`version`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:241](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L241)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:241](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L241)
 
 #### Parameters
 
@@ -1103,7 +1103,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:241](https://github.com/O
 
 > **signAllInputs**(`keyPair`, `sighashTypes`?): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:596](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L596)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:596](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L596)
 
 #### Parameters
 
@@ -1129,7 +1129,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:596](https://github.com/O
 
 > **signAllInputsAsync**(`keyPair`, `sighashTypes`?): `Promise`\<`void`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:618](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L618)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:618](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L618)
 
 #### Parameters
 
@@ -1155,7 +1155,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:618](https://github.com/O
 
 > **signAllInputsHD**(`hdKeyPair`, `sighashTypes`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:503](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L503)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:503](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L503)
 
 #### Parameters
 
@@ -1181,7 +1181,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:503](https://github.com/O
 
 > **signAllInputsHDAsync**(`hdKeyPair`, `sighashTypes`): `Promise`\<`void`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:526](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L526)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:526](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L526)
 
 #### Parameters
 
@@ -1207,7 +1207,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:526](https://github.com/O
 
 > **signAndFinalize**(`singer`): `Promise`\<`void`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:123](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/types.ts#L123)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:123](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/types.ts#L123)
 
 Signs the PSBT with the provided signer and finalizes all inputs.
 
@@ -1229,7 +1229,7 @@ A promise that resolves when signing and finalization are complete.
 
 > **signInput**(`inputIndex`, `keyPair`, `sighashTypes`?): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:652](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L652)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:652](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L652)
 
 #### Parameters
 
@@ -1259,7 +1259,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:652](https://github.com/O
 
 > **signInputAsync**(`inputIndex`, `keyPair`, `sighashTypes`?): `Promise`\<`void`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:685](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L685)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:685](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L685)
 
 #### Parameters
 
@@ -1289,7 +1289,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:685](https://github.com/O
 
 > **signInputHD**(`inputIndex`, `hdKeyPair`, `sighashTypes`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:558](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L558)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:558](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L558)
 
 #### Parameters
 
@@ -1319,7 +1319,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:558](https://github.com/O
 
 > **signInputHDAsync**(`inputIndex`, `hdKeyPair`, `sighashTypes`): `Promise`\<`void`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:575](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L575)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:575](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L575)
 
 #### Parameters
 
@@ -1349,7 +1349,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:575](https://github.com/O
 
 > **toBase64**(): `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:733](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L733)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:733](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L733)
 
 #### Returns
 
@@ -1365,7 +1365,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:733](https://github.com/O
 
 > **toBuffer**(): `Uint8Array`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:723](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L723)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:723](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L723)
 
 #### Returns
 
@@ -1381,7 +1381,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:723](https://github.com/O
 
 > **toHex**(): `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:728](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L728)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:728](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L728)
 
 #### Returns
 
@@ -1397,7 +1397,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:728](https://github.com/O
 
 > **updateGlobal**(`updateData`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:738](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L738)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:738](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L738)
 
 #### Parameters
 
@@ -1419,7 +1419,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:738](https://github.com/O
 
 > **updateInput**(`inputIndex`, `updateData`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:743](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L743)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:743](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L743)
 
 #### Parameters
 
@@ -1445,7 +1445,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:743](https://github.com/O
 
 > **updateOutput**(`outputIndex`, `updateData`): `this`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:748](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L748)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:748](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L748)
 
 #### Parameters
 
@@ -1471,7 +1471,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:748](https://github.com/O
 
 > **validateSignaturesOfAllInputs**(`validator`): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:448](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L448)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:448](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L448)
 
 #### Parameters
 
@@ -1493,7 +1493,7 @@ Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:448](https://github.com/O
 
 > **validateSignaturesOfInput**(`inputIndex`, `validator`, `pubkey`?): `boolean`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:456](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L456)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/psbt.ts:456](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/psbt.ts#L456)
 
 #### Parameters
 

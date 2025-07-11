@@ -6,7 +6,7 @@
 
 # Class: DummyProvider
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:11](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L11)
+Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:11](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L11)
 
 A DummyProvider is build for test purpose only, it always returns a dummy utxo for `getUtxos` request.
 
@@ -21,7 +21,7 @@ A DummyProvider is build for test purpose only, it always returns a dummy utxo f
 
 > **new DummyProvider**(`network`): [`DummyProvider`](DummyProvider.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L17)
+Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L17)
 
 #### Parameters
 
@@ -39,7 +39,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:17](https:/
 
 > **addNewUTXO**(`utxo`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:63](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L63)
+Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:63](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L63)
 
 Add a UTXO to the provider
 
@@ -63,7 +63,7 @@ Add a UTXO to the provider
 
 > **broadcast**(`txHex`): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:73](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L73)
+Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:73](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L73)
 
 Send a raw transaction hex string.
 
@@ -89,7 +89,7 @@ A promise which resolves to the hash of the transaction that has been sent.
 
 > **getConfirmations**(`_txId`): `Promise`\<`number`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:70](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L70)
+Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:70](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L70)
 
 Query a transaction confirmation
 
@@ -113,7 +113,7 @@ Query a transaction confirmation
 
 > **getFeeRate**(): `Promise`\<`number`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:67](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L67)
+Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:67](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L67)
 
 Query current network fee
 
@@ -131,7 +131,7 @@ Query current network fee
 
 > **getNetwork**(): `Promise`\<[`SupportedNetwork`](../type-aliases/SupportedNetwork.md)\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L19)
+Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L19)
 
 Get the current network the provider is connected to.
 
@@ -151,7 +151,7 @@ A promise which resolves to the current network identifier.
 
 > **getRawTransaction**(`txId`): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:79](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L79)
+Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:79](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L79)
 
 Get a transaction raw hex from the network.
 
@@ -177,7 +177,7 @@ The query result with the transaction raw hex.
 
 > **getUtxos**(`address`, `_options`?): `Promise`\<[`UTXO`](../interfaces/UTXO.md)[]\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:22](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L22)
+Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:22](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L22)
 
 Get a list of the UTXOs.
 
@@ -209,7 +209,7 @@ A promise which resolves to a list of UTXO for the query options.
 
 > **markSpent**(`txId`, `vout`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:56](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L56)
+Defined in: [packages/scrypt-ts-opcat/src/providers/dummyProvider.ts:56](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/dummyProvider.ts#L56)
 
 Mark an outpoint as spent
 

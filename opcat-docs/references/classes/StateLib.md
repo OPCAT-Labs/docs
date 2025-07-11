@@ -6,7 +6,7 @@
 
 # Class: StateLib\<ST\>
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts:14](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts#L14)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts:14](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts#L14)
 
 Library for computing the hash of a state.
 
@@ -26,7 +26,7 @@ Library for computing the hash of a state.
 
 > **new StateLib**\<`ST`\>(...`args`): [`StateLib`](StateLib.md)\<`ST`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L32)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L32)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32]
 
 > `protected` **\_\_state\_lib\_dummy\_private\_field\_\_**: `ST`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts:95](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts#L95)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts:97](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts#L97)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.t
 
 > **args**: `any`[] = `[]`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L31)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L31)
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31]
 
 > `static` **artifact**: [`Artifact`](../interfaces/Artifact.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L16)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L16)
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16]
 
 > `static` `optional` **stateType**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L17)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L17)
 
 #### Inherited from
 
@@ -92,7 +92,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17]
 
 > `static` **deserializeState**\<`T`\>(`this`, `serializedState`): `T`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts:56](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts#L56)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts:58](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts#L58)
 
 Deserializes a state object from its ByteString representation.
 
@@ -132,7 +132,7 @@ Error if artifact is not loaded, library is not found, or state type is undefine
 
 > `static` **loadArtifact**(`artifact`): *typeof* [`SmartContractLib`](SmartContractLib.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L19)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L19)
 
 #### Parameters
 
@@ -154,7 +154,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19]
 
 > `static` **stateHash**\<`T`\>(`this`, `state`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts:87](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts#L87)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts:89](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts#L89)
 
 Computes the SHA-256 hash of a serialized state object.
 
@@ -188,13 +188,15 @@ The hash as a ByteString
 
 > `static` **serializeState**\<`T`\>(`this`, `state`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts:22](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts#L22)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts:24](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/stateLib.ts#L24)
 
-Calculate the hash of the state object
+Serializes the given state object into a ByteString using the library's artifact.
 
 #### Type Parameters
 
 • **T** *extends* `StructObject`
+
+Type of the state object extending OpcatState
 
 #### Parameters
 
@@ -202,16 +204,20 @@ Calculate the hash of the state object
 
 (...`args`) => [`StateLib`](StateLib.md)\<`T`\>
 
+Reference to the StateLib class constructor
+
 ##### state
 
 `T`
 
-the state object
+State object to be serialized
 
 #### Returns
 
 [`ByteString`](../type-aliases/ByteString.md)
 
-the hash byte string of the state object
+Serialized state as ByteString
 
-#### Onchain
+#### Throws
+
+Error if artifact is not loaded, library not found in artifact, or state type is undefined

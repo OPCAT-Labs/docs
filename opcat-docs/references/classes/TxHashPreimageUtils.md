@@ -6,7 +6,7 @@
 
 # Class: TxHashPreimageUtils
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts:15](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts#L15)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts:15](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts#L15)
 
 Utility class for working with transaction hash preimages in Bitcoin smart contracts.
 Provides methods to:
@@ -23,7 +23,7 @@ Provides methods to:
 
 > **new TxHashPreimageUtils**(...`args`): [`TxHashPreimageUtils`](TxHashPreimageUtils.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L32)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L32)
 
 #### Parameters
 
@@ -45,7 +45,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32]
 
 > **args**: `any`[] = `[]`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L31)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L31)
 
 #### Inherited from
 
@@ -57,7 +57,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31]
 
 > `static` **artifact**: [`Artifact`](../interfaces/Artifact.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L16)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L16)
 
 #### Inherited from
 
@@ -69,7 +69,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16]
 
 > `static` `optional` **stateType**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L17)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L17)
 
 #### Inherited from
 
@@ -81,7 +81,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17]
 
 > `static` **getInputByteString**(`txHashPreimage`, `inputIndex`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts:37](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts#L37)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts:46](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts#L46)
 
 Extracts the byte string of a specific input from the transaction hash preimage.
 
@@ -111,7 +111,7 @@ The byte string representing the specified input.
 
 > `static` **getOutputByteString**(`txHashPreimage`, `outputIndex`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts:48](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts#L48)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts:57](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts#L57)
 
 Extracts the byte string of a specific output from the transaction hash preimage.
 
@@ -141,7 +141,11 @@ The byte string of the specified output.
 
 > `static` **getTxHashFromTxHashPreimage**(`txHashPreimage`): [`ByteString`](../type-aliases/ByteString.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts#L17)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts:26](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPreimageUtils.ts#L26)
+
+Computes the transaction hash from a given transaction hash preimage.
+Validates the preimage structure and constructs the hash by concatenating
+version, input/output counts, input/output lists, and lock time.
 
 #### Parameters
 
@@ -149,9 +153,14 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPrei
 
 [`TxHashPreimage`](../type-aliases/TxHashPreimage.md)
 
+The transaction hash preimage containing version,
+                       input/output lists, and lock time.
+
 #### Returns
 
 [`ByteString`](../type-aliases/ByteString.md)
+
+The computed transaction hash as a ByteString.
 
 ***
 
@@ -159,7 +168,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/txHashPrei
 
 > `static` **loadArtifact**(`artifact`): *typeof* [`SmartContractLib`](SmartContractLib.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L19)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L19)
 
 #### Parameters
 

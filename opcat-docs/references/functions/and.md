@@ -8,7 +8,7 @@
 
 > **and**(`a`, `b`): [`Int32`](../type-aliases/Int32.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/fns/bitwise.ts:75](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/fns/bitwise.ts#L75)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/fns/bitwise.ts:75](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/fns/bitwise.ts#L75)
 
 Performs a bitwise AND operation between two Int values.
 

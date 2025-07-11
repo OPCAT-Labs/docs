@@ -6,7 +6,7 @@
 
 # Class: DefaultSigner
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:35](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L35)
+Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:33](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L33)
 
 An implemention of a simple signer which should just be used in nodejs environments.
 
@@ -20,7 +20,7 @@ An implemention of a simple signer which should just be used in nodejs environme
 
 > **new DefaultSigner**(`privateKey`): [`DefaultSigner`](DefaultSigner.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:39](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L39)
+Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:37](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L37)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:39](https://g
 
 > `readonly` **network**: [`Network`](Network.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:38](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L38)
+Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:36](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L36)
 
 ## Methods
 
@@ -46,7 +46,7 @@ Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:38](https://g
 
 > **getAddress**(): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:51](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L51)
+Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:49](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L49)
 
 Gets the address derived from the signer's private key and network.
 
@@ -66,7 +66,7 @@ A promise resolving to the address string.
 
 > **getPublicKey**(): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:61](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L61)
+Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:59](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L59)
 
 Returns the public key in hexadecimal format derived from the private key.
 
@@ -86,7 +86,7 @@ A promise that resolves to the public key as a hex string.
 
 > **signPsbt**(`psbtHex`, `options`?): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:76](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L76)
+Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:74](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L74)
 
 Signs a PSBT (Partially Signed Bitcoin Transaction) with the signer's key pair.
 
@@ -125,7 +125,7 @@ Promise resolving to the signed PSBT in hexadecimal format
 
 > **signPsbts**(`reqs`): `Promise`\<`string`[]\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:107](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L107)
+Defined in: [packages/scrypt-ts-opcat/src/signers/defaultSigner.ts:105](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/defaultSigner.ts#L105)
 
 Signs multiple PSBTs (Partially Signed Bitcoin Transactions) in parallel.
 

@@ -6,7 +6,7 @@
 
 # Class: UnisatSigner
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:29](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L29)
+Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:29](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L29)
 
 a [signer][https://docs.opcatlabs.io/how-to-deploy-and-call-a-contract/#signer](https://docs.opcatlabs.io/how-to-deploy-and-call-a-contract/#signer) which implemented the protocol with the [Unisat wallet][https://unisat.io](https://unisat.io),
 and dapps can use to interact with the Unisat wallet
@@ -21,7 +21,7 @@ and dapps can use to interact with the Unisat wallet
 
 > **new UnisatSigner**(`unisat`): [`UnisatSigner`](UnisatSigner.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L32)
+Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L32)
 
 #### Parameters
 
@@ -39,7 +39,7 @@ Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:32](https://gi
 
 > **getAddress**(): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:54](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L54)
+Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:54](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L54)
 
 Gets the address from the Unisat wallet API.
 
@@ -59,7 +59,7 @@ A promise that resolves to the first account address string.
 
 > **getPublicKey**(): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:63](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L63)
+Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:63](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L63)
 
 Retrieves the public key from the Unisat wallet API.
 
@@ -79,7 +79,7 @@ A promise that resolves to the public key as a string.
 
 > **getUnisatAPI**(): [`UnisatAPI`](../interfaces/UnisatAPI.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:41](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L41)
+Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:41](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L41)
 
 Retrieves the Unisat API instance from either the cached property or global window object.
 
@@ -99,7 +99,7 @@ If Unisat API is not available (not installed).
 
 > **signPsbt**(`psbtHex`, `options`?): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:74](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L74)
+Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:74](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L74)
 
 Signs a PSBT (Partially Signed Opcat Transaction) using the Unisat wallet API.
 
@@ -133,7 +133,7 @@ A Promise resolving to the signed PSBT in hexadecimal format.
 
 > **signPsbts**(`reqs`): `Promise`\<`string`[]\>
 
-Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:84](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L84)
+Defined in: [packages/scrypt-ts-opcat/src/signers/unisatSigner.ts:84](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/signers/unisatSigner.ts#L84)
 
 Signs multiple PSBTs (Partially Signed Opcat Transactions) using the Unisat wallet API.
 

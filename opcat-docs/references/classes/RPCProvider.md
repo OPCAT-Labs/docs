@@ -6,7 +6,7 @@
 
 # Class: RPCProvider
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:12](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L12)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:12](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L12)
 
 The RPCProvider is backed by opcat RPC
 
@@ -21,7 +21,7 @@ The RPCProvider is backed by opcat RPC
 
 > **new RPCProvider**(`network`, `url`, `walletName`, `username`, `password`): [`RPCProvider`](RPCProvider.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:18](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L18)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:18](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L18)
 
 #### Parameters
 
@@ -55,7 +55,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:18](https://g
 
 > `readonly` **network**: [`SupportedNetwork`](../type-aliases/SupportedNetwork.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L19)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L19)
 
 ***
 
@@ -63,7 +63,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:19](https://g
 
 > `readonly` **password**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:23](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L23)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:23](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L23)
 
 ***
 
@@ -71,7 +71,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:23](https://g
 
 > `readonly` **url**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:20](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L20)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:20](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L20)
 
 ***
 
@@ -79,7 +79,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:20](https://g
 
 > `readonly` **username**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:22](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L22)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:22](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L22)
 
 ***
 
@@ -87,7 +87,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:22](https://g
 
 > `readonly` **walletName**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:21](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L21)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:21](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L21)
 
 ## Methods
 
@@ -95,7 +95,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:21](https://g
 
 > **addNewUTXO**(`utxo`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:300](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L300)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:300](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L300)
 
 Add a UTXO to the provider
 
@@ -119,7 +119,7 @@ Add a UTXO to the provider
 
 > **broadcast**(`txHex`): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:176](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L176)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:176](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L176)
 
 Send a raw transaction hex string.
 
@@ -145,7 +145,7 @@ A promise which resolves to the hash of the transaction that has been sent.
 
 > **getConfirmations**(`txId`): `Promise`\<`number`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:81](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L81)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:81](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L81)
 
 Query a transaction confirmation
 
@@ -169,7 +169,7 @@ Query a transaction confirmation
 
 > **getFeeRate**(): `Promise`\<`number`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:30](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L30)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:30](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L30)
 
 Query current network fee
 
@@ -187,7 +187,7 @@ Query current network fee
 
 > **getNetwork**(): `Promise`\<[`SupportedNetwork`](../type-aliases/SupportedNetwork.md)\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:26](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L26)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:26](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L26)
 
 Get the current network the provider is connected to.
 
@@ -207,7 +207,7 @@ A promise which resolves to the current network identifier.
 
 > **getRawTransaction**(`txId`): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:185](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L185)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:185](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L185)
 
 Get a transaction raw hex from the network.
 
@@ -233,7 +233,7 @@ The query result with the transaction raw hex.
 
 > `protected` **getRpcPassword**(): `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:74](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L74)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:74](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L74)
 
 #### Returns
 
@@ -245,7 +245,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:74](https://g
 
 > `protected` **getRpcUrl**(`walletName`): `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:77](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L77)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:77](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L77)
 
 #### Parameters
 
@@ -263,7 +263,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:77](https://g
 
 > `protected` **getRpcUser**(): `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:71](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L71)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:71](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L71)
 
 #### Returns
 
@@ -275,7 +275,7 @@ Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:71](https://g
 
 > **getUtxos**(`address`, `_options`?): `Promise`\<[`UTXO`](../interfaces/UTXO.md)[]\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:235](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L235)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:235](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L235)
 
 Get a list of the UTXOs.
 
@@ -307,7 +307,7 @@ A promise which resolves to a list of UTXO for the query options.
 
 > **markSpent**(`txId`, `vout`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:293](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L293)
+Defined in: [packages/scrypt-ts-opcat/src/providers/rpcProvider.ts:293](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/rpcProvider.ts#L293)
 
 Mark an outpoint as spent
 

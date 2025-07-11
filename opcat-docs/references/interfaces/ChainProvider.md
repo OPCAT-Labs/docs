@@ -6,7 +6,7 @@
 
 # Interface: ChainProvider
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:7](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L7)
+Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:7](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L7)
 
 a provider for interacting with the blockchain
 
@@ -16,7 +16,7 @@ a provider for interacting with the blockchain
 
 > **broadcast**(`txHex`): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:13](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L13)
+Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:13](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L13)
 
 Send a raw transaction hex string.
 
@@ -38,7 +38,7 @@ A promise which resolves to the hash of the transaction that has been sent.
 
 > **getConfirmations**(`txId`): `Promise`\<`number`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:24](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L24)
+Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:24](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L24)
 
 Query a transaction confirmation
 
@@ -58,7 +58,7 @@ Query a transaction confirmation
 
 > **getFeeRate**(): `Promise`\<`number`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:29](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L29)
+Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:29](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L29)
 
 Query current network fee
 
@@ -72,7 +72,7 @@ Query current network fee
 
 > **getNetwork**(): `Promise`\<[`SupportedNetwork`](../type-aliases/SupportedNetwork.md)\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:36](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L36)
+Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:36](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L36)
 
 Get the current network the provider is connected to.
 
@@ -88,7 +88,7 @@ A promise which resolves to the current network identifier.
 
 > **getRawTransaction**(`txId`): `Promise`\<`string`\>
 
-Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L19)
+Defined in: [packages/scrypt-ts-opcat/src/providers/chainProvider.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/providers/chainProvider.ts#L19)
 
 Get a transaction raw hex from the network.
 

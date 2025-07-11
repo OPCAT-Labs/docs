@@ -8,7 +8,7 @@
 
 > **hash256**(`a`): [`Sha256`](../type-aliases/Sha256.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/fns/hashes.ts:48](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/fns/hashes.ts#L48)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/fns/hashes.ts:48](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/fns/hashes.ts#L48)
 
 A double SHA256 hash, which is always 256 bits or 32 bytes bytes long. This
 hash function is commonly used inside Bitcoin, particularly for the hash of a

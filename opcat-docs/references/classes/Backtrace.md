@@ -6,7 +6,7 @@
 
 # Class: Backtrace
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts:27](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts#L27)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts:27](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts#L27)
 
 Library for verifying backtraces all the way to the genesis point.
 
@@ -22,7 +22,7 @@ Library for verifying backtraces all the way to the genesis point.
 
 > **new Backtrace**(...`args`): [`Backtrace`](Backtrace.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L32)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L32)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:32]
 
 > **args**: `any`[] = `[]`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L31)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L31)
 
 #### Inherited from
 
@@ -56,7 +56,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:31]
 
 > `static` **artifact**: [`Artifact`](../interfaces/Artifact.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L16)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L16)
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:16]
 
 > `static` `optional` **stateType**: `string`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L17)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L17)
 
 #### Inherited from
 
@@ -80,7 +80,10 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:17]
 
 > `static` **checkPrevTxHashPreimage**(`txHashPreimage`, `t_prevouts`, `t_inputIndex`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts:30](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts#L30)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts:39](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts#L39)
+
+Verifies that the transaction hash preimage matches the previous transaction hash 
+at the specified input index in the prevouts.
 
 #### Parameters
 
@@ -88,17 +91,27 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.
 
 [`TxHashPreimage`](../type-aliases/TxHashPreimage.md)
 
+The transaction hash preimage to verify
+
 ##### t\_prevouts
 
 [`ByteString`](../type-aliases/ByteString.md)
+
+The previous outputs containing the expected transaction hash
 
 ##### t\_inputIndex
 
 `bigint`
 
+The index of the input to check against in prevouts
+
 #### Returns
 
 `void`
+
+#### Throws
+
+Will throw an error if the hashes don't match
 
 ***
 
@@ -106,7 +119,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.
 
 > `static` **loadArtifact**(`artifact`): *typeof* [`SmartContractLib`](SmartContractLib.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L19)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts#L19)
 
 #### Parameters
 
@@ -128,7 +141,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/smartContractLib.ts:19]
 
 > `static` **verifyChainTxs**(`backtraceInfo`, `t_prevTxInputList`): [`ChainTxVerifyResponse`](../type-aliases/ChainTxVerifyResponse.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts:91](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts#L91)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts:100](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts#L100)
 
 Tx chain verification to ensure:
   1. the current spending UTXO is the output of prevTx
@@ -160,7 +173,7 @@ locking script and outpoint of the specified output of prevPrevTx
 
 > `static` **verifyFromOutpoint**(`backtraceInfo`, `t_genesisOutpoint`, `t_selfScript`, `t_prevTxInputList`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts:47](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts#L47)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts:56](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts#L56)
 
 Back-to-genesis backtrace verification for a contract which can be backtraced to the genesis outpoint.
 It will be a valid backtraceInfo if the prevPrevOutpoint is the genesis outpoint or the prevPrevScript is the selfScript.
@@ -201,7 +214,7 @@ input list of the prevTx which should be trustable
 
 > `static` **verifyFromScript**(`backtraceInfo`, `t_genesisScript`, `t_selfScript`, `t_prevTxInputList`): `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts:69](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts#L69)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts:78](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/builtin-libs/backtrace.ts#L78)
 
 Back-to-genesis backtrace verification for a contract which can be backtraced to the genesis script.
 It will be a valid backtraceInfo if the prevPrevScript is the genesis script or the selfScript.

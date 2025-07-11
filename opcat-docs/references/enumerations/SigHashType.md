@@ -6,7 +6,7 @@
 
 # Enumeration: SigHashType
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:222](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L222)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:222](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L222)
 
 Enum representing the different signature hash types used in Bitcoin script.
 These flags determine which parts of the transaction are signed.
@@ -25,7 +25,7 @@ The values correspond to standard Bitcoin signature hash flags:
 
 > **ALL**: `1`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:223](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L223)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:223](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L223)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:223
 
 > **ANYONECANPAY**: `128`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:226](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L226)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:226](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L226)
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:226
 
 > **ANYONECANPAY\_ALL**: `129`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:227](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L227)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:227](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L227)
 
 ***
 
@@ -49,7 +49,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:227
 
 > **ANYONECANPAY\_NONE**: `130`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:228](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L228)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:228](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L228)
 
 ***
 
@@ -57,7 +57,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:228
 
 > **ANYONECANPAY\_SINGLE**: `131`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:229](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L229)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:229](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L229)
 
 ***
 
@@ -65,7 +65,7 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:229
 
 > **NONE**: `2`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:224](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L224)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:224](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L224)
 
 ***
 
@@ -73,4 +73,4 @@ Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:224
 
 > **SINGLE**: `3`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:225](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L225)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts:225](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/primitives.ts#L225)

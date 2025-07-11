@@ -8,7 +8,7 @@
 
 > **decode**(`buffer`, `maxLength`?, `minimal`?): `number`
 
-Defined in: [packages/scrypt-ts-opcat/src/utils/script\_number.ts:13](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/utils/script_number.ts#L13)
+Defined in: [packages/scrypt-ts-opcat/src/utils/script\_number.ts:13](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/utils/script_number.ts#L13)
 
 Decodes a script number from a buffer.
 

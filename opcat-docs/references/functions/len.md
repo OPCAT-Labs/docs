@@ -8,7 +8,7 @@
 
 > **len**(`a`): [`Int32`](../type-aliases/Int32.md)
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/fns/byteString.ts:60](https://github.com/OPCAT-Labs/ts-tools/blob/e67b8657b34dbf57f8a4f9bdf87cdc2742db16bb/packages/scrypt-ts-opcat/src/smart-contract/fns/byteString.ts#L60)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/fns/byteString.ts:60](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/fns/byteString.ts#L60)
 
 Returns the length of the ByteString. Not the length of the string.
 
