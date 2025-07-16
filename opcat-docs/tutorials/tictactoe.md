@@ -198,7 +198,6 @@ The `P2PKH` output can be built using `TxUtils.buildP2PKHOutput(amount: bigint, 
         else {
             // build a output that contains latest contract state.
             outputs = TxUtils.buildDataOutput(this.ctx.spentScriptHash, this.ctx.value, Tictactoe.stateHash(this.state));
-            // outputs = this.buildStateOutput(this.ctx.value);
         }
 
         outputs += this.buildChangeOutput();
@@ -211,7 +210,10 @@ Make sure that the output of the current transaction must contain this increment
 
 ```ts
 // verify current tx has this single output
-assert(this.ctx.hashOutputs == hash256(outputs), 'hashOutputs mismatch')
+assert(
+            this.checkOutputs(outputs),
+            'hashOutputs check failed'
+        )
 ```
 
 # Conclusion
