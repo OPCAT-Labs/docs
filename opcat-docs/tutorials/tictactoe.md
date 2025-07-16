@@ -211,9 +211,9 @@ Make sure that the output of the current transaction must contain this increment
 ```ts
 // verify current tx has this single output
 assert(
-            this.checkOutputs(outputs),
-            'hashOutputs check failed'
-        )
+    this.checkOutputs(outputs),
+    'hashOutputs check failed'
+)
 ```
 
 # Conclusion
