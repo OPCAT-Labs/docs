@@ -15,7 +15,6 @@
 const sidebars = {
   opcatDocsSidebar: [
     'overview',
-    'difference-from-bitcoin',
     'send-a-transaction',
     {
       type: 'category',
@@ -35,6 +34,7 @@ const sidebars = {
       }
       ],
     },
+    'difference-from-bitcoin',
     {
       type: 'category',
       label: 'Tutorials',
