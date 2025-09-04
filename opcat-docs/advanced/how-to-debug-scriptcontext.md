@@ -5,7 +5,7 @@ sidebar_position: 4
 # How to Debug ScriptContext Failure
 
 
-[ScriptContext](../how-to-write-a-contract/scriptcontext.md) enables the logic of the contract to be executed correctly according to the agreement, and the state of the contract to be propagated correctly.
+[ScriptContext](../smart-contract-development/how-to-write-a-contract/scriptcontext.md) enables the logic of the contract to be executed correctly according to the agreement, and the state of the contract to be propagated correctly.
 
 When it runs incorrectly, you need to master the following methods to locate the error more efficiently.
 

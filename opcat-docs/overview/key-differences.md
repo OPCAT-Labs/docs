@@ -1,14 +1,19 @@
+---
+id: key-differences
+title: Differences from Bitcoin Layer 1
+---
+
 # Differences from Bitcoin Layer 1
 
-This document outlines the key differences between OP_CAT and Bitcoin's layer 1 implementation.
+This document outlines the key differences between OP_CAT Layer and Bitcoin's layer 1 implementation.
 
 ## Overview
 
-OP_CAT introduces several modifications to the standard Bitcoin protocol to enhance functionality and support advanced smart contract capabilities.
+OP_CAT Layer introduces several modifications to the standard Bitcoin protocol to enhance functionality and support advanced smart contract capabilities.
 
 ## Key Differences
 
-| Component | OP_CAT | Bitcoin |
+| Component | OP_CAT Layer | Bitcoin |
 |-----------|--------|---------|
 | **Transaction Structure** | Extended with `data` field for each transaction output and witness is removed | Legacy/witness transaction format |
 | **Transaction Hash** | Hash of TxHashPreimage | Hash of raw transaction |
@@ -18,7 +23,7 @@ OP_CAT introduces several modifications to the standard Bitcoin protocol to enha
 ## Detailed Explanations
 
 ### Transaction Structure Modifications
-OP_CAT implements significant changes to the transaction structure:
+OP_CAT Layer implements significant changes to the transaction structure:
 
 1. **Witness Removal**: The witness structure is completely removed, simplifying the transaction format and reducing complexity compared to Bitcoin's witness-based approach.
 
@@ -29,9 +34,9 @@ OP_CAT implements significant changes to the transaction structure:
 
 #### Transaction Structure Field Comparison
 
-The following table shows which fields are present in OP_CAT vs Bitcoin transaction structures:
+The following table shows which fields are present in OP_CAT Layer vs Bitcoin transaction structures:
 
-| Field | OP_CAT | Bitcoin | Description |
+| Field | OP_CAT Layer | Bitcoin | Description |
 |-------|--------|---------|-------------|
 | **Version** | ✓ | ✓ | Transaction version number |
 | **SegWit Marker** | ✗ | ✓ | Segregated Witness marker |
@@ -43,7 +48,7 @@ The following table shows which fields are present in OP_CAT vs Bitcoin transact
 | **Output Count** | ✓ | ✓ | Number of transaction outputs |
 | **Output[0].amount** | ✓ | ✓ | Output value in satoshis |
 | **Output[0].scriptPubKey** | ✓ | ✓ | Output script (script public key) |
-| **Output[0].data** | ✓ | ✗ | Additional data field (OP_CAT only) |
+| **Output[0].data** | ✓ | ✗ | Additional data field (OP_CAT Layer only) |
 | **Output[1]...** | ✓ | ✓ | Additional outputs (if any) |
 | **Witness** | ✗ | ✓ | Witness data for SegWit |
 | **LockTime** | ✓ | ✓ | Transaction lock time |
@@ -53,7 +58,7 @@ The following table shows which fields are present in OP_CAT vs Bitcoin transact
 These modifications streamline transaction processing while providing enhanced functionality for smart contract operations.
 
 ### Transaction Hashing
-- **OP_CAT**: Uses TxHashPreimage for transaction hashing, which provides more flexibility in hash computation and enables advanced smart contract features
+- **OP_CAT Layer**: Uses TxHashPreimage for transaction hashing, which provides more flexibility in hash computation and enables advanced smart contract features
 - **Bitcoin**: Uses the raw transaction data directly for hash calculation, following the traditional Bitcoin protocol
 
 #### TxHashPreimage Structure
@@ -76,7 +81,7 @@ The TxHashPreimage contains the following fields for transaction hashing. All ha
 | **locktime** | Transaction lock time |
 
 ### SigHashPreimage Enhancement
-OP_CAT implements an improved sighash preimage structure specifically designed to support smart contract functionality. This enhancement provides better control over signature verification and enables more sophisticated contract interactions.
+OP_CAT Layer implements an improved sighash preimage structure specifically designed to support smart contract functionality. This enhancement provides better control over signature verification and enables more sophisticated contract interactions.
 
 #### SigHashPreimage Structure (when sighash type is SIGHASH_ALL)
 
@@ -98,9 +103,9 @@ OP_CAT implements an improved sighash preimage structure specifically designed t
 | **sighashType** | Signature hash type |
 
 ### Bitcoin Virtual Machine (BVM) Enhancements
-OP_CAT significantly enhances the Bitcoin Virtual Machine by restoring all opcodes that were previously disabled in Bitcoin:
+OP_CAT Layer significantly enhances the Bitcoin Virtual Machine by restoring all opcodes that were previously disabled in Bitcoin:
 
-- **OP_CAT**: Restores all opcodes to enable full smart contract functionality
+- **OP_CAT Layer**: Restores all opcodes to enable full smart contract functionality
 - **Bitcoin**: Disables many opcodes for security and stability reasons
 
 This restoration enables:
@@ -111,7 +116,7 @@ This restoration enables:
 
 ## Technical Implications
 
-These architectural differences provide OP_CAT with several advantages:
+These architectural differences provide OP_CAT Layer with several advantages:
 
 1. **Simplified Transaction Structure**: The removal of witness data reduces transaction complexity and processing overhead
 2. **Enhanced Flexibility**: TxHashPreimage allows for more sophisticated hash computation methods
@@ -125,7 +130,7 @@ These architectural differences provide OP_CAT with several advantages:
 
 ## Compatibility Considerations
 
-While OP_CAT maintains compatibility with Bitcoin's core principles, these modifications may affect:
+While OP_CAT Layer maintains compatibility with Bitcoin's core principles, these modifications may affect:
 - Transaction validation processes
 - Block structure and size calculations
 - Smart contract deployment and execution

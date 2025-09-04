@@ -56,5 +56,5 @@ Upon a successful execution you should see an output like the following:
 Demo contract deployed: 4080c16237b8d8e25af54a1d8b151fb5aa804410d70c0d1ba1fa6f7bb8d1ab25
 ```
 
-You can take a look at the deployed smart contract using the [Mempool block explorer](https://mempool-testnet.fractalbitcoin.io/tx/4080c16237b8d8e25af54a1d8b151fb5aa804410d70c0d1ba1fa6f7bb8d1ab25).
+You can take a look at the deployed smart contract using the [blockchain explorer](https://testnet.opcatlabs.io/tx/4080c16237b8d8e25af54a1d8b151fb5aa804410d70c0d1ba1fa6f7bb8d1ab25).
 In our example, the first output contains the compiled smart contract code.
