@@ -7,7 +7,7 @@ sidebar_position: 5
 Before using a smart contract in production, one should always test it carefully, especially because any bug in it may cause **real economic losses**.
 
 
-Create a sample project with [the sCrypt CLI Tool](./installation.md#the-scrypt-cli-tool):
+Create a sample project with [the Opcat CLI Tool](../developer-guides/install-cli-and-sdk.md):
 
 ```sh
 npx @opcat-labs/cli-opcat project demo
@@ -193,7 +193,7 @@ npm run test:testnet
 ```
 
 :::note
-When running tests in a `testnet` environment, you need to get some test coins from a [faucet](./how-to-deploy-and-call-a-contract/faucet.md).
+When running tests in a `testnet` environment, you need to get some test coins from a [faucet](../developer-guides/connect-to-testnet.md#testnet-faucet).
 :::
 
 

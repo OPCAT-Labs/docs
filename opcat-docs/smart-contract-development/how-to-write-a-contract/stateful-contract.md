@@ -20,7 +20,7 @@ To achieve that, we divide a smart contract in the transaction into two parts: 1
 The code part contains the business logic of a contract that encodes rules for state transition and **must not change**.
 A state transition occurs when a transaction spends the output in the transaction containing the old state and creates a new transaction containing the new state and keeping the contract code intact.
 Since the new output contains the same contract code, its spending transaction must also retain the same code, otherwise it will fail. This chain of transactions can go on and on and thus a state is maintained along the chain, recursively.
-![](../../static/img/state-btc.png)
+![](../../../static/img/state-btc.png)
 
 ## Create a Stateful Contract
 
@@ -185,6 +185,6 @@ export class UnCounter extends SmartContract<CounterState> {
 
 The choice between stateless and stateful smart contracts depends on the needs of your blockchain application.
 
-If your app needs to store persistent data on chain, a stateful smart contract is appropriate. For example, with an [auction app](../tutorials/auction.md), you want to store the highest bidder so far and how much she bids, in case you need to return the fund to her when a higher bid arrives.
+If your app needs to store persistent data on chain, a stateful smart contract is appropriate. For example, with an auction app, you want to store the highest bidder so far and how much she bids, in case you need to return the fund to her when a higher bid arrives.
 
 If your app merely validates spending conditions without retaining data, a stateless smart contract is desirable. An example is a simple transfer using signature and public key in a [P2PKH contract](../how-to-deploy-and-call-a-contract/how-to-deploy-and-call-a-contract.md#method-with-signatures).

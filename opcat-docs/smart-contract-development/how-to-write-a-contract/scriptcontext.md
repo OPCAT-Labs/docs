@@ -6,7 +6,7 @@ sidebar_position: 3
 
 In the UTXO model, the context of validating a smart contract is the UTXO containing it and the transaction spending it, including its inputs and outputs. In the following example, when the second of input of transaction `tx1` (2 inputs and 2 outputs) is spending the second output of `tx0` (3 inputs and 3 outputs), the context for the smart contract in the latter output is roughly the UTXO and `tx1` circled in red.
 
-![scriptContext](../../static/img/scriptContext.jpg)
+![scriptContext](../../../static/img/scriptContext.jpg)
 
 The context only contains local information.
 This is different from account-based blockchains (like Ethereum) where context consists of the global state of the entire blockchain.
@@ -250,4 +250,4 @@ export class DesignatedReceivers extends SmartContract {
 
 ### Debugging
 
-See [How to Debug ScriptContext Failure](../advanced/how-to-debug-scriptcontext.md)
+See [How to Debug ScriptContext Failure](../../advanced/how-to-debug-scriptcontext.md)

@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# How to integrate with a front-end
+# Front-end Integration
 
 This section will show how to integrate your smart contract to a front-end, so users can interact with it.
 We assume that you already have the basic knowledge of front-end development, so we will not spend much time introducing this part of the code, but mostly be focusing on how to interact with the smart contract in the front-end project.
@@ -116,100 +116,3 @@ This command installs the dependencies and configures the contract development e
 After this, we are ready to go!
 
 ![](../../static/img/frontend-dependency.png)
-
-## Integrate Wallet
-
-You will integrate [unisat](https://unisat.io), a browser extension wallet, similar to [MetaMask](https://metamask.io/), into the project.
-
-To request access to the wallet, you can use its APIs to create a signer:
-
-```ts
-declare global {
-	interface Window {
-		unisat: UnisatAPI
-	}
-}
-const signer = new UnisatSigner(window.unisat);
-```
-
-create a provider:
-
-```ts
-const provider = new MempoolProvider('fractal-testnet')
-```
-
-create a psbt and use signer and provider to signer and deploy it:
-
-```ts
-const address = await signer.getAddress();
-const psbt = new ExtPsbt();
-const utxos = await provider.getUtxos(address);
-const feeRate = await provider.getFeeRate();
-psbt.addUTXO(utxos)
-    .addCovenantOutput(covenant, satoshis)
-    .change(address, feeRate);
-
-// sign the psbts
-const [signedPsbtHex] = await signer.signPsbts(psbt.psbtOptions());
-
-// combine and finalize the signed psbts
-const signedPsbt = ExtPsbt.fromHex(signedPsbtHex).finalizeAllInputs();
-
-// broadcast the psbts
-const deployTx = signedPsbt.extractTransaction();
-await provider.broadcast(deployTx.toHex());
-```
-
-the scrypt SDK `@opcat-labs/scrypt-ts-opcat` provide `deploy` and `call` features, just use them in `App.tsx`:
-
-```ts
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { call, Covenant, deploy, MempoolProvider, sha256, toByteString, UnisatAPI, UnisatSigner } from '@opcat-labs/scrypt-ts-opcat';
-import { Helloworld } from 'helloworld';
-
-declare global {
-	interface Window {
-		unisat: UnisatAPI
-	}
-}
-
-async function deployAndCall() {
-
-  const covenant = Covenant.createCovenant(new Helloworld(sha256(toByteString("hello world", true))))
-
-  const provider = new MempoolProvider('fractal-testnet')
-  const signer = new UnisatSigner(window.unisat);
-
-  const deployTx = await deploy(signer, provider, covenant);
-
-  console.log(`Helloworld contract deployed: ${deployTx.getId()}`)
-
-  const callTx = await call(signer, provider, covenant, {
-      invokeMethod: (contract: Helloworld) => {
-        contract.unlock(toByteString('hello world', true));
-      },
-  });
-
-  console.log('Helloworld contract `unlock` called: ', callTx.getId());
-}
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={deployAndCall}>Deploy and Call</button>
-      </header>
-    </div>
-  );
-}
-
-export default App;
-```
-
-Afterwards, you can interact with the contract from the front-end.
-
-
-Go to the [sCrypt Academy](https://academy.scrypt.io) to see a step-by-step guide on how to build a Tic-Tac-Toe game on chain.

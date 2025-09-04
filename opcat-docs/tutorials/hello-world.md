@@ -8,7 +8,7 @@ sidebar_position: 1
 ## Overview
 In this tutorial, we will cover how to create a "Hello World" smart contract, deploy it, and call it.
 
-Before starting, ensure all [prerequisite tools](../installation) are installed.
+Before starting, ensure all [prerequisite tools](../developer-guides/install-cli-and-sdk) are installed.
 
 ## Create a new project
 
@@ -57,8 +57,8 @@ This `Helloworld` contract stores the sha256 hash of a message in the contract p
 Now let’s look at what is in the smart contract.
 
 - `SmartContract`: all smart contracts must extend the `SmartContract` base class.
-- `@prop`:  the [`@prop` decorator](../how-to-write-a-contract/basics#properties) marks a contract property.
-- `@method`: the [`@method` decorator](../how-to-write-a-contract/basics#method-decorator) marks a contract method. A [public method](../how-to-write-a-contract/basics#public-methods) is an entry point to a contract.
+- `@prop`:  the [`@prop` decorator](../smart-contract-development/how-to-write-a-contract/basics#properties) marks a contract property.
+- `@method`: the [`@method` decorator](../smart-contract-development/how-to-write-a-contract/basics#method-decorator) marks a contract method. A [public method](../smart-contract-development/how-to-write-a-contract/basics#public-methods) is an entry point to a contract.
 - `assert`: throws an error and makes the method call fail if its first argument is `false`. Here it ensures the passed message hashed to the expected digest.
 
 ## Compile Contract
@@ -100,12 +100,12 @@ Before we deploy the contract, you need to generate a Bitcoin key.
 npm run genprivkey
 ```
 
-then follow the [faucet instructions](../../how-to-deploy-and-call-a-contract/faucet) to fund the key.
+then use the [faucet](../developer-guides/connect-to-testnet.md#testnet-faucet) to fund the key.
 
 Next, start deploying and calling the contract:
 
-1. To [deploy a smart contract](../how-to-deploy-and-call-a-contract/how-to-deploy-and-call-a-contract.md#contract-deployment), simply call its `deploy` method.
-1. To [call a smart contract](../how-to-deploy-and-call-a-contract/how-to-deploy-and-call-a-contract.md#contract-call), call one of its public methods.
+1. To [deploy a smart contract](../smart-contract-development/how-to-deploy-and-call-a-contract/how-to-deploy-and-call-a-contract.md#contract-deployment), simply call its `deploy` method.
+1. To [call a smart contract](../smart-contract-development/how-to-deploy-and-call-a-contract/how-to-deploy-and-call-a-contract.md#contract-call), call one of its public methods.
 
 For this example, overwrite `deploy.ts` in the root of the project with the following code to deploy and call the `Helloworld` contract:
 

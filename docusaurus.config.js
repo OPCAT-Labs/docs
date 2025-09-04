@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'OP_CAT',
-  tagline: 'OP_CAT Docs',
+  tagline: 'OP_CAT Layer Docs',
   url: 'https://docs.opcatlabs.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -62,7 +62,7 @@ const config = {
           {
             position: "left",
             to: "/",
-            label: "OP_CAT docs",
+            label: "OP_CAT Layer",
           },
           {
             /* Only visible under docs. See src/custom/custom.css */
@@ -89,7 +89,7 @@ const config = {
       algolia: {
         appId: '82071YP9QT',
         apiKey: '1bea775ee26025441b760f123bf1da9c',
-        indexName: 'ocpat-docs',
+        indexName: 'opcat-docs',
       },
     }),
 

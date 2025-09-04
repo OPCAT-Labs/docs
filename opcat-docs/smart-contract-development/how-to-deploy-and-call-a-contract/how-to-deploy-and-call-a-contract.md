@@ -8,7 +8,7 @@ sidebar_position: 1
 ## Core Concepts
 After you've finished writing a contract, you can deploy and call it. But first, you should learn how a smart contract interacts with the blockchain. In this section, we will go over some fundamental concepts in detail.
 
-![](../../static/img/call.png)
+![](../../../static/img/call.png)
 [Credit: moonbeam](https://docs.moonbeam.network/tutorials/eth-api/how-to-build-a-dapp)
 
 ### Compile and Load Contract
@@ -78,7 +78,7 @@ When you call a public method of a contract instance in a UTXO, a call transacti
 
 This section could be summarized as the diagram below:
 
-![](../../static/img/contract_tx.svg)
+![](../../../static/img/contract_tx.svg)
 
 ## Prepare a Signer and Provider
 
@@ -91,7 +91,7 @@ const provider = new MempoolProvider('opcat-testnet');
 const signer = new DefaultSigner(PrivateKey.fromRandom(Networks.testnet))
 ```
 
-The `privateKey` must have enough coins. Learn how to fund it on a testnet using a [faucet](./faucet).
+The `privateKey` must have enough coins. Learn how to fund it on a testnet using a [faucet](../../developer-guides/connect-to-testnet.md#testnet-faucet).
 
 
 :::note

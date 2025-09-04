@@ -1,4 +1,4 @@
-# Sending a Transaction on OP_CAT Layer
+# Sending a Transaction
 
 This guide will walk you through the complete process of sending a transaction on the OP_CAT layer, from generating a private key to broadcasting the transaction.
 
@@ -34,7 +34,7 @@ This code generates a new private key and address on the testnet. Save both the 
 
 ## Step 2: Get Testnet Coins
 
-After generating your address, you'll need some testnet coins to send transactions. Visit the OP_CAT testnet faucet to receive testnet coins.
+After generating your address, you'll need some testnet coins to send transactions. Visit the OP_CAT Layer [testnet faucet](https://faucet.opcatlabs.io/) to receive testnet coins.
 
 ## Step 3: Fetch UTXOs from the Network
 
