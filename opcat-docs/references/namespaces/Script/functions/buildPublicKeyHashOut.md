@@ -8,7 +8,7 @@
 
 > **buildPublicKeyHashOut**(`to`): [`Script`](../../../classes/Script.md)
 
-Defined in: node\_modules/@opcat-labs/opcat/types/script/script.d.cts:398
+Defined in: node_modules/@opcat-labs/opcat/types/script/script.d.cts:398
 
 Builds a standard P2PKH (Pay-to-Public-Key-Hash) script for a given recipient.
 
@@ -24,7 +24,7 @@ Recipient's public key, address, or address string
 
 [`Script`](../../../classes/Script.md)
 
-A P2PKH script with the format: OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
+A P2PKH script with the format: `OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG`
 
 ## Throws
 
