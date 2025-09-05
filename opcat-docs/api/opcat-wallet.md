@@ -24,7 +24,7 @@ if (typeof window.opcat_wallet !== "undefined") {
 
 ## Connect to the Opcat Wallet
 
-"Connecting" or "logging in" to Opcat Wallet effectively means "to access the user's Bitcoin account(s)".
+"Connecting" or "logging in" to Opcat Wallet effectively means "to access the user's OP_CAT Layer account(s)".
 
 You should only initiate a connection request in response to direct user action, such as clicking a button. You should always disable the "connect" button while the connection request is pending. You should never initiate a connection request on page load.
 
@@ -149,9 +149,6 @@ try {
 
 ```
 
-**Additional Note**
-
-- For P2TR addresses, the returned value will be the original public key, not the tweaked one
 
 ---
 
@@ -168,46 +165,13 @@ The `accountsChanged` will be emitted whenever the user's exposed account addres
 
 The following provides several methods to list the wallet's assets and construct corresponding send transactions.
 
-### getBalanceV2
-
-```
-opcat.getBalanceV2()
-```
-
-Get BTC balance
-
-**Parameters**
-
-none
-
-**Returns**
-
-- `Promise` - `Object`:
-  - `available` - `number` : the available satoshis
-  - `unavailable` - `number` : the unavailable satoshis
-  - `total` - `number` : the total satoshis
-
-**Example**
-
-```javascript
-try {
-    let res = await window.opcat.getBalanceV2();
-    console.log(res)
-} catch (e) {
-    console.log(e);
-}
-
-> {"available":10000,"unavailable":546,"total":10546}
-
-```
-
 ### getBalance
 
 ```
 opcat.getBalance()
 ```
 
-Get BTC balance
+Get cBTC balance
 
 **Parameters**
 
@@ -238,29 +202,32 @@ try {
 
 ```
 
-### getBitcoinUtxos
+### getPaymentUtxos
 
 ```
-opcat.getBitcoinUtxos(cursor,size)
+opcat.getPaymentUtxos(cursor,size)
 ```
 
-GetBitcoinUTXOS
+getPaymentUtxos
 
 **Parameters**
 
 **Returns**
 
 - `Promise` - `object`:
-  - `txid` - `string`:
-  - `vout` - `integer`:
+  - `txid` - `string`: The txid
+  - `vout` - `integer`: The output index
+  - `satoshis` - `integer`: The output value
+  - `scriptPk` - `string`: The output script, hex format
+  - `data` - `string`: The output data, hex format
 
-### sendBitcoin
+### sendTransfer
 
 ```
-opcat.sendBitcoin(toAddress, satoshis, options)
+opcat.sendTransfer(toAddress, satoshis, options)
 ```
 
-Send BTC
+Send Transfer
 
 **Parameters**
 
@@ -279,7 +246,7 @@ Send BTC
 
 ```javascript
 try {
-  let txid = await window.opcat.sendBitcoin(
+  let txid = await window.opcat.sendTransfer(
     "tb1qrn7tvhdf6wnh790384ahj56u0xaa0kqgautnnz",
     1000
   );
@@ -292,20 +259,20 @@ try {
 
 ## Manage Networks
 
-Opcat Wallet currently supports the following network types, which can be obtained through opcat.getChain, and switched through the `opcat.switchChain` method.
+Opcat Wallet currently supports the following network types, which can be obtained through opcat.getNetwork, and switched through the `opcat.switchNetwork` method.
 
-| name                    | enum                    | uni  | network |
-| ----------------------- | ----------------------- | ---- | ------- |
-| Opcat Layer Mainnet | OPCAT_LAYER_MAINNET | BTC   | livenet |
-| Opcat Layer Testnet | OPCAT_LAYER_TESTNET | tBTC  | testnet |
+| name                    | unit  | network |
+| ----------------------- | ----------------------- | ---- |
+| Opcat Layer Mainnet | cBTC   | livenet |
+| Opcat Layer Testnet | tcBTC  | testnet |
 
-### getChain
+### getNetwork
 
 ```
-opcat.getChain()
+opcat.getNetwork()
 ```
 
-get chain
+get network
 
 **Parameters**
 
@@ -314,75 +281,63 @@ none
 **Returns**
 
 - `Promise` - `Object`:
-  - `enum` - `string` : the enum of chain
-  - `name` - `string` : the name of chain
-  - `network` - `string` : livenet or testnet
+  - `name` - `string`: The network name
+  - `network` - `string` : `livenet` or `testnet`
 
 **Example**
 
 ```javascript
 try {
-  let res = await window.opcat.getChain();
+  let res = await window.opcat.getNetwork();
   console.log(res)
 } catch (e) {
   console.log(e);
 }
 
->  {enum: 'BITCOIN_MAINNET', name: 'Bitcoin Mainnet', network: 'livenet'}
+>  {name: 'Opcat Layer Mainnet', network: 'livenet'}
 ```
 
 ---
 
-### switchChain
+### switchNetwork
 
 ```
-opcat.switchChain(chain)
+opcat.switchNetwork(network)
 ```
 
-switch chain
+switch network
 
 **Parameters**
 
-- `chain` - `string`: the chain. BITCOIN_MAINNET or BITCOIN_TESTNET
+- `network` - `string`: the network. `livenet` or `testnet`
 
 **Returns**
 
 - `Promise` - `Object`:
-  - `enum` - `string` : the enum of chain
-  - `name` - `string` : the name of chain
+  - `name` - `string` : the name of network
   - `network` - `string` : livenet or testnet
 
 **Example**
 
 ```javascript
 try {
-    let res = await window.opcat.switchChain("BITCOIN_MAINNET");
+    let res = await window.opcat.switchnetwork("OPCAT_MAINNET");
     console.log(res)
 } catch (e) {
     console.log(e);
 }
 
-> {enum: 'BITCOIN_MAINNET', name: 'Bitcoin Mainnet', network: 'livenet'}
+> {enum: 'OPCAT_MAINNET', name: 'OP_CAT Layer Mainnet', network: 'livenet'}
 ```
 
 ---
 
-### chainChanged
+### networkChanged
 
 ```javascript
-opcat.on('chainChanged', handler: (network: string) => void);
+opcat.on('networkChanged', handler: ({name: string, network: string}) => void);
 
-opcat.removeListener('chainChanged', handler: (network: string) => void);
-```
-
-The `chainChanged` will be emitted whenever the user's network changes.
-
-### networkChanged (deprecated)
-
-```javascript
-opcat.on('networkChanged', handler: (network: string) => void);
-
-opcat.removeListener('networkChanged', handler: (network: string) => void);
+opcat.removeListener('networkChanged', handler: (name: string, network: string) => void);
 ```
 
 The `networkChanged` will be emitted whenever the user's network changes.
@@ -391,13 +346,106 @@ The `networkChanged` will be emitted whenever the user's network changes.
 ## Signing
 
 ### signPsbt
+```
+opcat.signPsbt(psbtHex[, options])
+```
 
-** TBD **
+Sign PSBT
+
+This method will traverse all inputs that match the current address to sign.
+
+**Parameters**
+
+- `psbtHex` - `string`: the hex string of psbt to sign
+- options
+  - `autoFinalized` - `boolean`: whether finalize psbt after signing, default is true
+  - `toSignInputs` - `array`:
+    - `index` - `number`: which input to sign
+    - `address` - `string`: (at least specify either an address or a publicKey) Which corresponding private key to use for signing
+    - `publicKey` - `string`: (at least specify either an address or a publicKey) Which corresponding private key to use for signing
+    - `sighashTypes` - `number[]`: (optionals) sighashTypes
+
+**Returns**
+
+`Promise` - `string`: the hex string of signed psbt
+
+**Example**
+
+```javascript
+try {
+  let res = await window.opcat.signPsbt("70736274ff01007d....", {
+    autoFinalized: false,
+    toSignInputs: [
+      {
+        index: 0,
+        address: "tb1q8h8....mjxzny",
+      },
+      {
+        index: 1,
+        publicKey: "tb1q8h8....mjxzny",
+        sighashTypes: [1],
+      },
+      {
+        index: 2,
+        publicKey: "02062...8779693f",
+      },
+    ],
+  });
+  console.log(res);
+} catch (e) {
+  console.log(e);
+}
+
+opcat.signPsbt("xxxxxxxx", {
+  toSignInputs: [{ index: 0, publicKey: "xxxxxx", disableTweakSigner: true }],
+  autoFinalized: false,
+});
+```
+
 
 ### signPsbts
 
-** TBD **
 
+```
+opcat.signPsbts(psbtHexs[, options])
+```
+
+Sign Multiple PSBTs at once
+
+This method will traverse all inputs that match the current address to sign.
+
+**Parameters**
+
+- `psbtHexs` - `string[]`: the hex strings of psbt to sign
+- `options` - `object[]`: the options of signing psbt
+  - `autoFinalized` - `boolean`: whether finalize psbt after signing, default is true
+  - `toSignInputs` - `array`:
+    - `index` - `number`: which input to sign
+    - `address` - `string`: (at least specify either an address or a publicKey) Which corresponding private key to use for signing
+    - `publicKey` - `string`: (at least specify either an address or a publicKey) Which corresponding private key to use for signing
+
+**Returns**
+
+`Promise` - `string[]`: the hex strings of signed psbt
+
+**Example**
+
+```javascript
+try {
+  let res = await window.opcat.signPsbts([
+    "70736274ff01007d...",
+    "70736274ff01007d...",
+  ]);
+  console.log(res);
+} catch (e) {
+  console.log(e);
+}
+```
+
+**Additional Note**
+
+- Batch signing can improve user experience, but it also introduces security risks. Therefore, we require users to review the transaction details one by one before signing.
+  We do provide a convenient "Sign All" button, but it's currently only available for trusted applications. If you need this feature, please open an issue to apply for access.
 ### signMessage
 
 ```
