@@ -1,4 +1,4 @@
-[**scrypt-ts-opcat v1.0.1**](../README.md)
+[**scrypt-ts-opcat v1.0.4**](../README.md)
 
 ***
 
@@ -8,7 +8,7 @@
 
 > **ContractCall**\<`Contract`\>: (`contract`, `psbt`, `backtraceInfo`?) => `void`
 
-Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/psbt/types.ts#L17)
+Defined in: [packages/scrypt-ts-opcat/src/psbt/types.ts:17](https://github.com/OPCAT-Labs/ts-tools/blob/528986f3e4ac436a160988491680cf191c0bf231/packages/scrypt-ts-opcat/src/psbt/types.ts#L17)
 
 Type definition for a contract call function.
 

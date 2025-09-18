@@ -1,4 +1,4 @@
-[**scrypt-ts-opcat v1.0.1**](../README.md)
+[**scrypt-ts-opcat v1.0.4**](../README.md)
 
 ***
 
@@ -8,7 +8,7 @@
 
 > **BacktraceInfo**: `object`
 
-Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/structs.ts:224](https://github.com/OPCAT-Labs/ts-tools/blob/2cea47af983eceafde930347ac310f78dee140a3/packages/scrypt-ts-opcat/src/smart-contract/types/structs.ts#L224)
+Defined in: [packages/scrypt-ts-opcat/src/smart-contract/types/structs.ts:224](https://github.com/OPCAT-Labs/ts-tools/blob/528986f3e4ac436a160988491680cf191c0bf231/packages/scrypt-ts-opcat/src/smart-contract/types/structs.ts#L224)
 
 Used for contract traceability to ensure that the spent contract comes from a unique outpoint
 
