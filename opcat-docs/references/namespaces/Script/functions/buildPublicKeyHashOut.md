@@ -24,7 +24,7 @@ Recipient's public key, address, or address string
 
 [`Script`](../../../classes/Script.md)
 
-A P2PKH script with the format: OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
+A P2PKH script with the format: `OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG`
 
 ## Throws
 
