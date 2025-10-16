@@ -1,0 +1,11 @@
+[**@opcat-labs/scrypt-ts-opcat v1.0.4**](../../../../../README.md)
+
+***
+
+[@opcat-labs/scrypt-ts-opcat](../../../../../README.md) / [crypto](../../../README.md) / [Signature](../README.md) / ANYONECANPAY\_SINGLE
+
+# Variable: ANYONECANPAY\_SINGLE
+
+> **ANYONECANPAY\_SINGLE**: `number`
+
+Defined in: node\_modules/@opcat-labs/opcat/types/crypto/signature.d.cts:158

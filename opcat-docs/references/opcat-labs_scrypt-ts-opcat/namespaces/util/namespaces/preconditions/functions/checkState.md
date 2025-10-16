@@ -1,0 +1,25 @@
+[**@opcat-labs/scrypt-ts-opcat v1.0.4**](../../../../../README.md)
+
+***
+
+[@opcat-labs/scrypt-ts-opcat](../../../../../README.md) / [util](../../../README.md) / [preconditions](../README.md) / checkState
+
+# Function: checkState()
+
+> **checkState**(`condition`, `message`): `void`
+
+Defined in: node\_modules/@opcat-labs/opcat/types/util/preconditions.d.cts:1
+
+## Parameters
+
+### condition
+
+`any`
+
+### message
+
+`any`
+
+## Returns
+
+`void`
