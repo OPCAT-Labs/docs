@@ -1,0 +1,29 @@
+[**@opcat-labs/scrypt-ts-opcat v1.0.4**](../../../../../README.md)
+
+***
+
+[@opcat-labs/scrypt-ts-opcat](../../../../../README.md) / [crypto](../../../README.md) / [Point](../README.md) / pointFromCompressed
+
+# Function: pointFromCompressed()
+
+> **pointFromCompressed**(`buf`): [`Point`](../../../classes/Point.md)
+
+Defined in: node\_modules/@opcat-labs/opcat/types/crypto/point.d.cts:116
+
+Converts a compressed buffer into a point.
+
+## Parameters
+
+### buf
+
+`Buffer`
+
+A compressed point.
+
+## Returns
+
+[`Point`](../../../classes/Point.md)
+
+A Point.
+
+## Static
