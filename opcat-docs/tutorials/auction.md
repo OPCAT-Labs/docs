@@ -92,7 +92,11 @@ const highestBidder: PubKey = this.bidder;
 this.bidder = bidder;
 
 // Auction continues with a higher bidder.
-const auctionOutput: ByteString = this.buildStateOutput(bid);
+const auctionOutput: ByteString = TxUtils.buildDataOutput(
+            this.ctx.spentScriptHash,
+            this.ctx.value,
+            Auction.stateHash(this.state)
+        );
 ```
 
 - A refund P2PKH output: pay back the previous bidder.
@@ -189,7 +193,7 @@ public close(sig: Sig) {
 
 Congratulations, you have completed the `Auction` contract! To use it in practice, you can refer to this example of [an NFT auction](https://xiaohuiliu.medium.com/integrate-ordinals-with-smart-contracts-on-bitcoin-part-2-d638b7ca3742).
 
-The [final complete code](https://github.com/sCrypt-Inc/boilerplate/blob/master/src/contracts/auction.ts) is as follows:
+The final complete code is as follows:
 
 ```ts
 import {
