@@ -10,13 +10,19 @@ sidebar_position: 2
 
 CAT Protocol provides multiple guard contract variants to balance transaction size and functionality. Each variant is optimized for different use cases, allowing you to choose the right configuration for your application.
 
+:::info Who Needs to Know About Guard Variants?
+**For Application Contract Developers**: If you're developing custom application contracts that interact with CAT tokens, understanding guard variants is essential for proper contract design and optimization.
+
+**For SDK Users**: If you're using the CAT SDK's feature functions (such as `send`), guard variants are automatically handled for you. The SDK will select and use the appropriate guard variant based on your transaction requirements.
+:::
+
 ## Understanding Guard Parameters
 
 Each guard variant is defined by three key parameters:
 
 - **TI_COUNT** (Transaction Inputs): Maximum number of inputs the guard can handle
 - **TO_COUNT** (Transaction Outputs): Maximum number of outputs the guard can handle
-- **GTT_COUNT** (Guard Type Tag): Maximum number of different token/NFT types that can be transferred in a single transaction
+- **GTT_COUNT** (Guard Token Type): Maximum number of different token/NFT types that can be transferred in a single transaction
 
 ## Available Variants
 
@@ -93,7 +99,7 @@ Each guard variant is defined by three key parameters:
 
 2. **Upgrade to 6_6_4** if you need:
    - Multi-token swaps (3-4 different tokens)
-   - Keep transaction size manageable
+   - Keeping transaction size manageable
 
 3. **Use 12_12_2** if you need:
    - Batch operations with many UTXOs
