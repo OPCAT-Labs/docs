@@ -79,6 +79,12 @@ import artifact from '../artifacts/contracts/helloworld.json'
 Helloworld.loadArtifact(artifact)
 ```
 
+3. Build the project:
+
+```sh
+npm run build
+```
+
 ## Compile using the `watch` option
 
 Monitoring for Real-time Error Detection
