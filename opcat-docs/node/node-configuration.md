@@ -151,7 +151,7 @@ This document lists all configurable startup parameters for the OpcatLayer node.
 | `-logips` | Include IP addresses in debug output, e.g., `-logips=1` | Boolean | `0` |
 | `-logtimestamps` | Prepend debug output with timestamp, e.g., `-logtimestamps=0` | Boolean | `1` |
 | `-excessutxocharge=<amt>` | Extra fee charged per UTXO created (COIN/kB), e.g., `-excessutxocharge=0.001` | Amount | `0` |
-| `-minrelaytxfee=<amt>` | Fees smaller than this are considered zero fee for relaying and mining, e.g., `-minrelaytxfee=0.00001` | Amount | `0.00000010` |
+| `-minrelaytxfee=<amt>` | Fees smaller than this are considered zero fee for relaying and mining, e.g., `-minrelaytxfee=0.00001` | Amount | `0.00000001` |
 | `-maxtxfee=<amt>` | Maximum total fees for a single wallet or raw transaction, e.g., `-maxtxfee=1.0` | Amount | `0.10` |
 | `-printtoconsole` | Send debug output to console instead of debug.log, e.g., `-printtoconsole=1` | Boolean | `0` |
 | `-shrinkdebugfile` | Shrink debug.log file on client startup, e.g., `-shrinkdebugfile=0` | Boolean | `1` (when no -debug) |
@@ -172,7 +172,7 @@ This document lists all configurable startup parameters for the OpcatLayer node.
 | Option | Description | Type | Default | Consensus Limit |
 |--------|-------------|------|---------|-----------------|
 | `-blockmaxsize=<n>` | Maximum generated block size in bytes, e.g., `-blockmaxsize=16000000` | Integer | `32000000` (32MB) | - |
-| `-blockmintxfee=<amt>` | Minimum fee rate for transactions included in block (COIN/kB), e.g., `-blockmintxfee=0.00001` | Amount | `0.00000010` | - |
+| `-blockmintxfee=<amt>` | Minimum fee rate for transactions included in block (COIN/kB), e.g., `-blockmintxfee=0.00001` | Amount | `0.00000001` | - |
 | `-maxtxsizepolicy=<n>` | Maximum transaction size for policy validation in bytes, e.g., `-maxtxsizepolicy=20000000` | Integer | `10000000` (10MB) | `1000000000` (1GB) |
 | `-maxtxsigopscountpolicy=<n>` | Maximum transaction sigops count for policy validation, e.g., `-maxtxsigopscountpolicy=100000` | Integer | `UINT32_MAX` | `UINT32_MAX` |
 | `-maxscriptnumlengthpolicy=<n>` | Maximum script number length for policy validation in bytes, e.g., `-maxscriptnumlengthpolicy=20000` | Integer | `10000` (10KB) | `750000` (750KB) |

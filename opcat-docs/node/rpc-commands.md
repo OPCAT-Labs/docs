@@ -425,7 +425,7 @@ $ bitcoin-cli getmempoolinfo
   "bytes": 0,
   "usage": 0,
   "maxmempool": 1000000000,
-  "mempoolminfee": 0.00000010
+  "mempoolminfee": 0.00000001
 }
 ```
 

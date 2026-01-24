@@ -296,7 +296,7 @@ curl http://localhost:28443/rest/mempool/info.json
   "bytes": 3110,
   "usage": 7952,
   "maxmempool": 1000000000,
-  "mempoolminfee": 0.00000010
+  "mempoolminfee": 0.00000001
 }
 ```
 
