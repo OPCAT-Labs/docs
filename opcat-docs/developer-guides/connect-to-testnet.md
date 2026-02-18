@@ -16,9 +16,12 @@ You can access a vast array of information on the testnet through this explorer:
 
 https://testnet.opcatlabs.io/
 
+Mainnet explorer is at https://mempool.opcatlabs.io.
 
 ## Testnet Open API Service
 
 You can access an open api service from this endpoint:
 
-https://testnet-openapi.opcatlabs.io/api/
+https://testnet-openapi.opcatlabs.io
+
+Mainnet open api service is at https://openapi.opcatlabs.io.

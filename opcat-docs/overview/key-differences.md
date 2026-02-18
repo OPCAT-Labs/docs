@@ -5,7 +5,7 @@ title: Differences from Bitcoin Layer 1
 
 # Differences from Bitcoin Layer 1
 
-This document outlines the key differences between OP_CAT Layer and Bitcoin's layer 1 implementation.
+This document outlines the key differences between OP_CAT Layer and Bitcoin's Layer 1 implementation.
 
 ## Overview
 
