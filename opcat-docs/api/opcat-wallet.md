@@ -171,7 +171,7 @@ The following provides several methods to list the wallet's assets and construct
 opcat.getBalance()
 ```
 
-Get cBTC balance
+Get BTC balance
 
 **Parameters**
 
@@ -263,8 +263,8 @@ Opcat Wallet currently supports the following network types, which can be obtain
 
 | name                    | unit  | network |
 | ----------------------- | ----------------------- | ---- |
-| Opcat Layer Mainnet | cBTC   | livenet |
-| Opcat Layer Testnet | tcBTC  | testnet |
+| Opcat Layer Mainnet | BTC   | livenet |
+| Opcat Layer Testnet | tBTC  | testnet |
 
 ### getNetwork
 
