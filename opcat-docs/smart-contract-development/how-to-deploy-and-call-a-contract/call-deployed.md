@@ -34,7 +34,7 @@ export class Counter extends SmartContract<CounterState> {
 
 ## Deploy
 
-To deploy the smart contract by calling the `deplly()` function:
+To deploy the smart contract by calling the `deploy()` function:
 
 ```ts
 const counter = new Counter();
