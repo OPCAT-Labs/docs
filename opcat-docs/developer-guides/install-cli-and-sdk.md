@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Prerequisites
 
-1. Install `Node.js` (require version `>=16`) and `NPM` on your machine by following the instructions [here](https://nodejs.org/en/download).
+1. Install `Node.js` (required version `>=16`) and `NPM` on your machine by following the instructions [here](https://nodejs.org/en/download).
 
 
 2. Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
@@ -24,7 +24,7 @@ softwareupdate --install-rosetta --agree-to-license
 ## CLI Tool
 
 The [OP_CAT Layer CLI](https://github.com/OPCAT-Labs/ts-tools/tree/main/packages/scrypt-ts-cli-opcat) tool is used to easily create, compile and publish `sCrypt` projects.
-The CLI provides best practice project scaffolding including dependencies such as sCrypt, a test framework ([Mocha](https://mochajs.org)), code auto-formatting ([Prettier](https://prettier.io)), linting ([ES Lint](https://eslint.org)), and more.
+The CLI provides best practice project scaffolding including dependencies such as sCrypt, a test framework ([Mocha](https://mochajs.org)), code auto-formatting ([Prettier](https://prettier.io)), linting ([ESLint](https://eslint.org)), and more.
 
 
 Install it globally on your machine.
@@ -41,9 +41,9 @@ npx @opcat-labs/cli-opcat project demo
 ```
 
 
-## Typescript SDK
+## TypeScript SDK
 
-There is a package that is useful for developing with Typescript:
+There is a package that is useful for developing with TypeScript:
 
 * `@opcat-labs/scrypt-ts-opcat`
 
