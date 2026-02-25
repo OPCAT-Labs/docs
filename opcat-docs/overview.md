@@ -1,4 +1,4 @@
-# What's OP_CAT Layer?
+# What's the OP_CAT Layer?
 
 The OP_CAT Layer represents a groundbreaking standalone, high-performance solution that extends Bitcoin's capabilities by addressing its programmability and scalability limitations while preserving its Proof of Work (PoW) security and UTXO model. This innovative layer leverages the re-enabled OP_CAT opcode to enable expressive smart contracts and trustless token protocols through a comprehensive modular architecture.
 
