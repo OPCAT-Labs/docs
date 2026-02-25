@@ -34,5 +34,6 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          system_prompt: |
-            After making and committing your changes, only create a pull request if the user explicitly asked for one (e.g. "open a PR", "create a PR"). Otherwise just commit and push to the branch.
+          claude_args: >-
+            --allowedTools "Bash(gh pr create:*)"
+            --append-system-prompt "Only run gh pr create if the user explicitly asked to create a PR. Otherwise just commit and push."
