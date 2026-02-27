@@ -1437,9 +1437,19 @@ Signs inputs for raw transaction.
 | Parameter | Type | Required | Default | Description |
 |-----------|------|----------|---------|-------------|
 | hexstring | string | Yes | - | Transaction hex string |
-| prevtxs | array | No | - | Previous transaction outputs array |
+| prevtxs | array | No | - | Previous transaction outputs array (see below) |
 | privkeys | array | No | - | Private keys for signing array |
 | sighashtype | string | No | ALL | Signature hash type |
+
+**prevtxs element:**
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| txid | string | Yes | The transaction id |
+| vout | numeric | Yes | The output number |
+| scriptPubKey | string | Yes | Hex-encoded script key |
+| amount | numeric | Yes | The amount spent |
+| data | string | No | Hex-encoded data field of the output |
 
 #### Return Value
 | Field | Type | Description |
