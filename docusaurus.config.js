@@ -86,14 +86,14 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      algolia: {
-        appId: '82071YP9QT',
-        apiKey: '1bea775ee26025441b760f123bf1da9c',
-        indexName: 'opcat-docs',
-      },
+
     }),
 
   plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      { hashed: true, docsRouteBasePath: "/" },
+    ],
   ],
 };
 
