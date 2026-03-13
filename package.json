@@ -24,7 +24,7 @@
     "raw-loader": "^4.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "docusaurus-lunr-search": "^3.4.0"
+    "@easyops-cn/docusaurus-search-local": "^0.44.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.2.0"
@@ -43,6 +43,16 @@
   },
   "engines": {
     "node": ">=16.14"
+  },
+  "resolutions": {
+    "joi": "^17.9.2",
+    "@docusaurus/core": "2.4.3",
+    "@docusaurus/theme-common": "2.4.3",
+    "@docusaurus/plugin-content-docs": "2.4.3",
+    "@docusaurus/utils": "2.4.3",
+    "@docusaurus/utils-common": "2.4.3",
+    "@docusaurus/utils-validation": "2.4.3",
+    "@docusaurus/theme-translations": "2.4.3"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
