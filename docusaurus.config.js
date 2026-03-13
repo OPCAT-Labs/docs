@@ -90,10 +90,7 @@ const config = {
     }),
 
   plugins: [
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      { hashed: true, docsRouteBasePath: "/" },
-    ],
+    require.resolve("docusaurus-lunr-search"),
   ],
 };
 
