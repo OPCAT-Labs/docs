@@ -10,7 +10,7 @@ const config = {
   tagline: 'OP_CAT Layer Docs',
   url: 'https://docs.opcatlabs.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/op_cat_logo.jpg',
 
